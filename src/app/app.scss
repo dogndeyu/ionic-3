@@ -1,0 +1,331 @@
+html,
+body,
+.ionic-body {
+  font-family: "Microsoft YaHei", 微软雅黑;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+$fontSize18: 1.8rem;
+$fontSize32: 3.2rem;
+$bgColor424857: #424857;
+$bgColorf5f5f5: #f5f5f5;
+$bgColor09c990: #09c990;
+$colorFff: #fff;
+$color1abc9c: #1abc9c;
+$color969696: #969696;
+$color8d8d8d: #8d8d8d;
+$color333: #333;
+$height24: 2.4rem;
+$height30: 3rem;
+$height40: 4rem;
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0
+}
+
+.flt {
+  float: left;
+}
+
+.frt {
+  float: right;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.f75 {
+  font-size: 0.75rem !important;
+}
+
+.f80 {
+  font-size: 0.8rem !important;
+}
+
+.f85 {
+  font-size: 0.85rem;
+}
+
+.f90 {
+  font-size: 0.9rem;
+}
+
+.f95 {
+  font-size: 0.95rem;
+}
+
+.f100 {
+  font-size: 1rem;
+}
+
+.f110 {
+  font-size: 1.1rem;
+}
+
+.f120 {
+  font-size: 1.2rem;
+}
+
+.f140 {
+  font-size: 1.4rem;
+}
+
+.f145 {
+  font-size: 1.45rem;
+}
+
+.f160 {
+  font-size: 1.60rem;
+}
+
+.f170 {
+  font-size: 1.70rem;
+}
+
+.f180 {
+  font-size: 1.8rem
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+  color: #e43039; // background-color: #08c
+}
+
+.tabs-ios .tab-button:hover:not(.disable-hover),
+.tabs-ios .tab-button[aria-selected=true] {
+  // background-color: #4596eb;
+  color: #e43039!important;
+  height: 46px;
+}
+
+.tabBottomContent ion-icon {
+  padding: 0 2px;
+}
+
+.tabs-ios .tab-button {
+  min-height: 44px;
+  color: #999999;
+}
+
+.tabs-ios .tabbar {
+  border-top: 1px solid #e3d8d8;
+  height: 46px;
+}
+
+.tabs-ios .tab-button-icon {
+  min-width: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 23px;
+  font-size: 25px;
+  color: #999999;
+}
+
+.tab-button-text {
+  font-size: 1.1rem;
+}
+
+.tabs-ios .tab-button-text {
+  margin-top: 2px;
+}
+
+.bgcolorf5 {
+  background-color: #f5f5f5;
+}
+
+// 6b687d
+.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+  border-width: 0 0 0;
+}
+
+.userInfoBox {
+  min-height: 195px;
+  padding-top: 50px;
+  background: linear-gradient(#475f77, #8b91ad, #aa9fad);
+}
+
+.userInfoBoxImg_cont {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.userInfoBoxImg {
+  margin-left: 25px;
+}
+
+.userInfoBoxList {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.userInfoBoxList p:nth-child(1) {
+  font-size: 2.4rem;
+}
+
+.userInfoBoxList p:nth-child(2) {
+  font-size: 1.4rem;
+  margin-top: 3px;
+}
+
+.userInfoBoxList p:nth-child(3) {
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.userInfoBoxList p:nth-child(4) {
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.userInfoBoxLisst {
+  color: #fff;
+}
+
+.userInfoBoxLisst ul li {
+  height: 50px;
+  line-height: 50px;
+  list-style: none;
+  border-bottom: 1px solid #9d9d9d;
+}
+
+.userInfoBoxLisst ul li span {
+  display: block;
+  float: left;
+}
+
+.userInfoBoxLisst ul li:nth-child(1) {}
+
+.userInfoBoxLisst ul li span:nth-child(1) {
+  margin-left: 40px;
+  display: block;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+
+.userInfoBoxLisst ul li:nth-child(1) span:nth-child(1) i {
+  font-size: 1.9rem;
+}
+
+.userInfoBoxLisst ul li span:nth-child(1) i {
+  font-size: 1.8rem;
+}
+
+.userInfoBoxLisst ul li:nth-child(3) span:nth-child(1) i {
+  font-size: 1.8rem;
+}
+
+.userInfoBoxLisst ul li:nth-child(4) span:nth-child(1) i {
+  font-size: 1.5rem;
+}
+
+.userInfoBoxLisst ul li span:nth-child(2) {
+  margin-left: 20px;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+}
+
+.exitContent {
+  margin-top: 10px;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.zxLoginBox span {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 1.35rem;
+}
+
+.zxLoginBox {
+  margin-top: 40px;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.exitContent span {
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.exitContent span:nth-child(1) {
+  font-size: 1.4rem; // margin-left: 30px;
+}
+
+.exitContent span:nth-child(2) {
+  margin-left: 15px;
+  font-size: 1.6rem;
+}
+
+ion-header {
+  // border-bottom: 1px solid #e0e0e0;
+  // background-color: #E32C35;
+  // color: #fff;
+}
+
+.bar-button-default-ios,
+.bar-button-default.bar-button-ios-default,
+.bar-button-clear-ios-default {
+  color: #fff;
+}
+
+.positionRela {
+  position: relative!important;
+}
+
+.borderBotNone {
+  border-bottom: none;
+}

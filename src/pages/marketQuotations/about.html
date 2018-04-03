@@ -1,0 +1,292 @@
+<ion-header class="homeHeader">
+  <ion-navbar color="navbarBgColr">
+    <ion-title>新股</ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconSearch" ios="ios-search-outline"></ion-icon>
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="xgContentDiv">
+  <div class="xgContentDiv">
+    <div class="row xg-xtop">
+      <div class="col col-50 xg-boder">
+        <div class="xg-pe yborder">
+          <p class="xgtop-fontsize xgzhch_font" align="center">2000股</p>
+          <p class="xg_colorQ xgzhch_font xg_size2" align="center">沪A配额</p>
+        </div>
+      </div>
+      <div class="col col-50 xg-boder">
+        <div class="xg-pe">
+          <div class="xgtop-fontsize xgzhch_font" align="center">2000股</div>
+          <div class="xg_size2 xg_colorQ xgzhch_font" align="center">深A配额</div>
+        </div>
+      </div>
+    </div>
+    <ion-toolbar no-border-top>
+      <ion-segment class="xg_zfPlatesTab" style="background-color:#fff" [(ngModel)]="pet">
+        <ion-segment-button class="zfPlatesTab" value="zfb_cont">
+          发行计划
+        </ion-segment-button>
+        <ion-segment-button class="zfPlatesTab" value="dfb_cont">
+          申购记录
+        </ion-segment-button>
+        <ion-segment-button class="zfPlatesTab" value="hslb_cont">
+          已发行新股
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+    <div class="zfb_dh" [ngSwitch]="pet">
+      <!-- 发行计划选项卡 -->
+      <ion-list *ngSwitchCase="'zfb_cont'">
+        <ion-row class="F_size">
+          <ion-col with-33 class="shg3">名称/申购代码</ion-col>
+          <ion-col with-33 class="fxjh_text shg3">发行价/申购上限</ion-col>
+          <ion-col with-33>
+            <span class="shg_zht shg3">申购数量</span>
+          </ion-col>
+        </ion-row>
+        <!-- 滚动部分 -->
+        <div id="xgscrollheight">
+          <div class="directive1">
+            <div class="shg_timer">
+              <img src="assets/img/timer.svg" alt="">
+              <span>2017-10-23 周一</span>
+            </div>
+            <ion-label style="margin:0px;">
+              <ion-row class="sgdm_style">
+                <ion-col with-33>
+                  <span class="xg_yfxchbox">
+                    <ion-checkbox color="rgba(30,123,226,1)" checked="true"></ion-checkbox>
+                  </span>
+                  <span class="xg_yfxcode">
+                    <p class="shgname">中国银河</p>
+                    <div class="shgcode shg1">
+                      <!-- <img src="../../assets/img/沪字红标.svg" alt=""> -->
+                      <span class="xg_shIco">
+                        <span>深</span>
+                      </span>
+                      <span>600235</span>
+                    </div>
+                  </span>
+                </ion-col>
+                <ion-col with-28>
+                  <p class="fxj">9.59
+                    <span class="qcolor">元</span>
+                  </p>
+                  <p class="shgshx shg1">2万股</p>
+                </ion-col>
+                <ion-col with-38 style="text-align:right;">
+                  <span class="shg_zht">
+                    <p class="shgsl_y">已申购</p>
+                    <p class="shgsl shg1">2000股</p>
+                  </span>
+                  <span class="shg_tb">
+                    <ion-icon class="shg_tb_f" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+                  </span>
+                </ion-col>
+              </ion-row>
+            </ion-label>
+            <ion-label style="margin:0px;">
+              <ion-row class="sgdm_style">
+                <ion-col with-33>
+                  <span class="xg_yfxchbox">
+                    <ion-checkbox color="rgba(30,123,226,1)"></ion-checkbox>
+                  </span>
+                  <span class="xg_yfxcode">
+                    <p class="shgname">中国银河</p>
+                    <div class="shgcode shg1">
+                      <span class="xg_hIco">
+                        <span>沪</span>
+                      </span>
+                      <span>600235</span>
+                    </div>
+                    <!-- <p class="shgcode shg1">600235</p> -->
+                  </span>
+                </ion-col>
+                <ion-col with-33>
+                  <p class="fxj">9.59
+                    <span class="qcolor">元</span>
+                  </p>
+                  <p class="shgshx shg1">2万股</p>
+                </ion-col>
+                <ion-col with-33 style="text-align:right;">
+                  <span class="shg_zht">
+                    <span class="fxjh_shgnum">
+                      <ion-input type="number" pattern="\d*"></ion-input>
+                    </span>
+                  </span>
+                  <span class="shg_tb">
+                    <ion-icon class="shg_tb_f" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+                  </span>
+                </ion-col>
+              </ion-row>
+            </ion-label>
+            <div class="dxtime">打新时间
+              <span>9:30-15:00</span>
+            </div>
+            <span class="yjdabtn">
+              <button ion-button class="yjdabtn_1">
+                <p>一键打新</p>
+              </button>
+            </span>
+            <!-- <div class="h_div"></div> -->
+          </div>
+          <div class="directive2">
+            <div class="shg_timer">
+              <img src="assets/img/timer.svg" alt="">
+              <span>2017-10-24 周二</span>
+            </div>
+            <ion-list style="margin:0px;">
+              <ion-row class="sgdm_style" *ngFor="let xgfxj of xgfxjs,let i = index" [ngClass]="{'text-danger': i==0}" (click)="goZsInformation()">
+                <ion-col with-33>
+                  <p class="shgname">{{xgfxj.name}}</p>
+                  <div class="shgcode shg1">
+                    <span class="xg_shIco">
+                      <span>深</span>
+                    </span>
+                    <span>{{xgfxj.number}}</span>
+                  </div>
+                  <!-- <p class="shgcode shg1">{{xgfxj.number}}</p> -->
+                </ion-col>
+                <ion-col with-33>
+                  <p class="fxj">{{xgfxj.price}}
+                    <span class="qcolor">元</span>
+                  </p>
+                  <p class="shgshx shg1">{{xgfxj.shgmax}}</p>
+                </ion-col>
+                <ion-col with-33 style="text-align:right;">
+                  <span class="shg_zht"></span>
+                  <span class="shg_tb">
+                    <ion-icon class="shg_tb_f" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+                  </span>
+                </ion-col>
+              </ion-row>
+            </ion-list>
+            <div class="h_div"></div>
+          </div>
+          <div class="directive3">
+            <div class="shg_timer">
+              <img src="assets/img/timer.svg" alt="">
+              <span>2017-10-25 周三</span>
+            </div>
+            <ion-list style="margin:0px;">
+              <ion-row class="sgdm_style" *ngFor="let xgfxj of xgfxjs,let i = index" [ngClass]="{'text-danger': i==0}" (click)="goZsInformation()">
+                <ion-col with-33>
+                  <p class="shgname">{{xgfxj.name}}</p>
+                  <div class="shgcode shg1">
+                    <span class="xg_hIco">
+                      <span>沪</span>
+                    </span>
+                    <span>{{xgfxj.number}}</span>
+                  </div>
+                  <!-- <p class="shgcode shg1">{{xgfxj.number}}</p> -->
+                </ion-col>
+                <ion-col with-33>
+                  <p class="fxj">{{xgfxj.price}}
+                    <span class="qcolor">元</span>
+                  </p>
+                  <p class="shgshx shg1">{{xgfxj.shgmax}}</p>
+                </ion-col>
+                <ion-col with-33 style="text-align:right;">
+                  <span class="shg_zht"></span>
+                  <span class="shg_tb">
+                    <ion-icon class="shg_tb_f" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+                  </span>
+                </ion-col>
+              </ion-row>
+            </ion-list>
+            <div class="h_div"></div>
+          </div>
+        </div>
+      </ion-list>
+      <!-- 申购记录选项卡 -->
+      <ion-list *ngSwitchCase="'dfb_cont'">
+        <ion-row class="F_size">
+          <ion-col with-33 class="shg3">名称/申购代码</ion-col>
+          <ion-col with-33 class="shgjl_text shg3">申购数量</ion-col>
+          <ion-col with-33>
+            <span class="shgjl_zht_text shg3">状态</span>
+          </ion-col>
+        </ion-row>
+        <ion-scroll scrollY="true" id="xgscrollheight2">
+          <div class="sgjl_directive1">
+            <div class="shg_timer">
+              <img src="assets/img/timer.svg" alt="">
+              <span>2017-10-23 周一</span>
+            </div>
+            <ion-label style="margin:0px;" *ngFor="let sgjl of sgjls">
+              <ion-row class="sgdm_style">
+                <ion-col with-33>
+                  <p class="shgname">{{sgjl.shgname}}</p>
+                  <div class="shgcode shg1">
+                    <span class="xg_hIco">
+                      <span>沪</span>
+                    </span>
+                    <span>{{sgjl.gpcode}}</span>
+                  </div>
+                </ion-col>
+                <ion-col with-33 class="xgshg_num">
+                  <span class="sgjl_fxj">{{sgjl.count}}
+                    <span class="qcolor">股</span>
+                  </span>
+                </ion-col>
+                <ion-col with-33 style="text-align:right;" class="xgshg_num">
+                  <span class="shgjl_zht" [ngStyle]="{'color':sgjl.sgzt == ztyjs ? 'rgba(187,187,187,1)' : sgjl.sgzt == ztyzq ? 'rgba(246,49,70,1)' : 'rgba(17,17,17,1)'}">{{sgjl.sgzt}}</span>
+                  <span class="shg_tb2">
+                    <ion-icon class="shg_tb_f" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+                  </span>
+                </ion-col>
+              </ion-row>
+            </ion-label>
+          </div>
+        </ion-scroll>
+      </ion-list>
+      <!-- 已发行新股选项卡 -->
+      <ion-list *ngSwitchCase="'hslb_cont'">
+        <ion-row class="F_size yfxxg_boder">
+          <ion-col with-25 class="shg_code3 shg3 fontSize1">名称/申购代码</ion-col>
+          <ion-col with-25 class="fxj_text shg_price3 shg3 fontSize1">发行价/中签率</ion-col>
+          <ion-col with-25 class="yfx_shbx shg3 fontSize1" style="padding:5px 0;">上市表现</ion-col>
+          <ion-col with-25>
+            <span class="yfxxg_time zht3 shg3 fontSize1">上市时间</span>
+          </ion-col>
+        </ion-row>
+        <ion-scroll scrollY="true" id="xgscrollheight3">
+          <div class="yfxxg_directive1">
+            <ion-label style="margin:0px;" *ngFor="let yfxxg of yfxxgs">
+              <ion-row class="yfxxg_style">
+                <ion-col with-25>
+                  <p class="shgname">{{yfxxg.yfxname}}</p>
+                  <div class="shgcode shg3">
+                    <span class="xg_shIco">
+                      <span>深</span>
+                    </span>
+                    <span>{{yfxxg.yfxcode}}</span>
+                  </div>
+                </ion-col>
+                <ion-col with-25>
+                  <p class="yfx_fxj">{{yfxxg.yfxprice}}
+                    <span class="qcolor">元</span>
+                  </p>
+                  <p class="yfx_zhql shgshx xg_zql">{{yfxxg.zhql}}%</p>
+                </ion-col>
+                <ion-col with-25 class="yfx_shsbxl">
+                  <span class="yfx_shsbx">{{yfxxg.shsbx}}%</span>
+                </ion-col>
+                <ion-col with-25 class="yfx_zht">
+                  <span class="yfx_shtime_no" [ngStyle]="{'color':yfxxg.shtime == shtimeno ? 'rgba(187,187,187,1)' : 'rgba(17,17,17,1)' }">{{yfxxg.shtime}}</span>
+                  <span class="shg_tb2">
+                    <ion-icon class="shg_tb_f" ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+                  </span>
+                </ion-col>
+              </ion-row>
+            </ion-label>
+          </div>
+        </ion-scroll>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>
+<!-- [ngStyle]="{'color':yfxxg.shtime = 'shtimeno' ? 'green' : 'red' }" -->

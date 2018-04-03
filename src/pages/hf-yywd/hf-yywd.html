@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>合肥市营业网点</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list no-lines class="ionList">
+    <ion-item>
+      <ion-searchbar placeholder="营业网点快速搜索" (ionInput)="getItems($event)"></ion-searchbar>
+    </ion-item>
+  </ion-list>
+  <div class="yybCity">
+    {{City}}
+    <div class="starPosition"></div>
+    
+  </div>
+  <div class="yywdLists clearfix">
+    <ul class="clearfix">
+      <li class="clearfix" *ngFor="let item of items">
+        <p>{{item.title}}</p>
+        <p>{{item.address}}</p>
+        <p>营业部电话:
+          <span>{{item.tel}}</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+</ion-content>

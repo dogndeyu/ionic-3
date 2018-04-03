@@ -1,0 +1,202 @@
+page-my-remind {
+  // .scroll-content {
+  //   border-top: 1px solid #e0e0e0;
+  // }
+  .toolbar-background-ios {
+    background-color: #E32C35!important;
+  }
+  .toolbar-title-ios {
+    color: #fff!important;
+  }
+  .ggTipsCont {
+    height: 35px;
+    line-height: 35px;
+    background-color: #e0e0e0;
+    color: #333;
+    padding-left: 10px;
+  }
+  .ggTipsLists .item {
+    border: none !important;
+  }
+  .ggTipsLists .item-ios.item-block .item-inner {
+    padding-right: 0;
+    border: none;
+  }
+  .xxtxContDiv .toggle-ios {
+    width: 60px;
+    height: 28px;
+  }
+  .xxtxContDiv .toggle-ios.toggle-ios .toggle-inner {
+    width: 24px;
+    height: 24px;
+  }
+  .xxtxContDiv .toggle-ios.toggle-checked .toggle-inner {
+    transform: translate3d(32px, 0, 0)!important;
+  }
+  .ggTipsLists .item-ios {
+    padding-left: 0px;
+  }
+  .ggTipsLists ul li div:nth-child(2) {
+    position: absolute;
+    right: 100px;
+    top: 8px
+  }
+  .ggTipsLists ion-label {
+    font-size: 1.4rem;
+  }
+  .ggTipsLists ul li {
+    height: 45px;
+    list-style: none;
+    margin-left: 14px;
+    padding-right: 8px;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative
+  }
+  .ggTipsLists ul li div:nth-child(1) {
+    height: 100%;
+    color: #333
+  }
+  .zhbdTipsLists .toggle-ios {
+    width: 60px;
+    height: 28px;
+  }
+  .zhbdTipsLists .toggle-ios.toggle-ios .toggle-inner {
+    width: 24px;
+    height: 24px;
+  }
+  .zhbdTipsLists .toggle-ios.toggle-checked .toggle-inner {
+    transform: translate3d(32px, 0, 0)!important;
+  }
+  .zhbdTipsLists ul:nth-child(1) li div:nth-child(2) {
+    margin-top: 7px;
+  }
+  .zhbdTipsLists ul li {
+    list-style: none;
+    margin-left: 14px;
+    padding-right: 8px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .zhbdTipsLists ul:nth-child(1) li div:nth-child(1) {
+    height: 100%;
+    color: #333
+  }
+  .tag {
+    height: 5px;
+    position: relative;
+  }
+  .tag em {
+    display: block;
+    border-width: 10px;
+    position: absolute;
+    top: -20px;
+    left: 35px;
+    border-style: solid dashed dashed;
+    border-color: #09F transparent transparent;
+    font-size: 0;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  .tag span {
+    display: block;
+    border-width: 10px;
+    position: absolute;
+    top: -20px;
+    left: 35px;
+    border-style: solid dashed dashed;
+    border-color: #FFF transparent transparent;
+    font-size: 0;
+    line-height: 0;
+    transform: rotate(180deg)
+  }
+  .rzrqDisBox {
+    width: 100%;
+    min-height: 130px;
+    border: 1px solid #ebebeb;
+  }
+  .ggTipsLists .item-ios .item-block .item-inner {
+    border: none!important;
+  }
+  .ggTipsLists .item-ios.item-block .item-inner {}
+  .rzrqLi {
+    height: auto !important;
+  }
+  .rzrqLi .item {
+    border: none;
+    margin: 0;
+    color: #666;
+  }
+  .zhbdTipsLists ul:nth-child(1) {
+    height: auto
+  }
+  .lineHei45 {
+    line-height: 45px;
+  }
+  .button-effect {
+    margin-top: 0!important;
+  }
+  .rzrqDisBox .item-block {
+    height: 40px;
+    line-height: 40px;
+    min-height: 40px;
+  }
+  .item:nth-child(1) {
+    margin-top: 0
+  }
+  .rzrqDisBox .checkbox-ios .checkbox-checked {
+    border-color: #beb7b7
+  }
+  .rzrqDisBox .checkbox-ios .checkbox-ios .checkbox-icon {
+    border-color: #beb7b7
+  }
+  .marTop8 {
+    margin-top: 8px;
+  }
+  .rzrqDisBox .item-ios {
+    padding-left: 10px;
+  }
+  .eyeshow {
+    display: block;
+  }
+  .eyehide {
+    display: none;
+  }
+  .zhbdTipsLists ul ion-label {
+    font-size: 1.4rem;
+  }
+  .zhbdTipsLists ul .item-ios.item-block .item-inner {
+    padding-right: 0;
+  }
+  .zhbdTipsLists ul .item-ios {
+    padding-left: 0;
+  }
+  .zhbdTipsLists .item-ios.item-block .item-inner {
+    border-bottom: none;
+  }
+  .zhbdTipsLists .item {
+    margin-bottom: 0
+  }
+  .openToggleTips {
+    font-size: 1.1rem;
+    color: #8d8484;
+    margin-left: 10px;
+  }
+  .remind-tips {
+    color: #333;
+    font-size: 1.4rem;
+    text-indent: 3rem;
+    background-color: #e0e0e0;
+    padding: 10px 10px 20px;
+  }
+  ion-label {
+    overflow: initial;
+  }
+  .label-ios {
+    margin-right: 2px;
+  }
+  .ionIconStyle {
+    width: 20px;
+    height: 20px;
+    color: #8ABCEE;
+    padding-top: 3px;
+  }
+}

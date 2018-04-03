@@ -1,0 +1,176 @@
+<ion-header class="borderBotNone">
+  <ion-navbar>
+    <ion-buttons start>
+      <div>
+        <ion-icon menuToggle class="iconEtc" ios="ios-contact-outline"></ion-icon>
+      </div>
+    </ion-buttons>
+    <ion-title>我的资产</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="zc360Content">
+  <div class="clearfix zcedCont">
+    <ul class="clearfix">
+      <li class="clearfix" *ngFor="let item of items">
+        <p>{{item.name}}</p>
+        <p>{{item.price}}元</p>
+      </li>
+    </ul>
+  </div>
+  <div class="zcCanvasCont clearfix">
+    <div class="zcCanvasLeft clearfix">
+      <div id="picturePlace" class="clearfix"></div>
+    </div>
+    <div class="zcCanvasRight clearfix">
+      <ul class="clearfix">
+        <li class="clearfix" *ngFor="let zc of zcs">
+          <div class="canvasLogo">
+            <img src="{{zc.src}}" alt="">
+          </div>
+          <div class="rightJdt">
+            <div class="jdContent" [ngStyle]=""></div>
+            <div class="jdNumber">
+              {{zc.percent}}%
+            </div>
+            <div class="jdname">
+              {{zc.name}}
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <section class="zc360Instro clearfix">
+    注：资产360数据内容在每日收盘清算后更新，非实 时数据；OTC指在国元的柜台销售发行的理财产品， 包括但不限于受益凭证、集合计划、报价回购行、对 赌型产品等
+  </section>
+  <div class="zc360PmContent clearfix">
+    <ul class="clearfix">
+      <!-- *ngFor="let pm of pms" -->
+
+      <li class="clearfix" *ngFor="let pm of pms">
+        <div class="zc360PmLogo">
+          <img src="{{pm.src}}" alt="">
+        </div>
+        <div class="zc360PerentCont">
+          <div class="zc360PerentLv">
+
+          </div>
+          <div class="zc360PerentNumber">
+            {{pm.percent}}%
+          </div>
+          <div class="zc360PerentName">
+            {{pm.name}}
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="prizeContent clearfix">
+    <div class="prizeContSvg clearfix">
+      <div class="clearfix">
+        <img src="assets/img/jinpai.svg" alt="">
+      </div>
+      <div class="clearfix">
+        <img src="assets/img/yinpai.svg" alt="">
+      </div>
+      <div class="clearfix">
+        <img src="assets/img/tongpai.svg" alt="">
+      </div>
+
+    </div>
+    <div class="clearfix prizeTxtContent">
+      <div class="prizeTxtContentDiv">
+        <div class="prizeTxtConten_o">
+          <div class="prizeTxtConten_t">
+            操盘大亨
+          </div>
+        </div>
+      </div>
+      <div class="prizeTxtContentDiv">
+        <div class="prizeTxtConten_o">
+          <div class="prizeTxtConten_t">
+            登堂入室
+          </div>
+        </div>
+      </div>
+      <div class="prizeTxtContentDiv">
+        <div class="prizeTxtConten_o">
+          <div class="prizeTxtConten_t">
+            千年股东
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="paimingCont clearfix">
+      <div class="clearfix">
+        当日收益排名
+      </div>
+      <div class="clearfix">
+        当日交易量排名
+      </div>
+      <div class="clearfix">
+        积分排名
+      </div>
+
+    </div>
+    <!-- <p>操盘大亨</p>
+    <p>登堂入室</p>
+    <p>千年股东</p>
+    <p>当日收益排名</p>
+    <p>当日交易量排名</p>
+    <p>积分排名</p> -->
+
+  </div>
+  <div class="namesContent clearfix">
+    <div class="clearfix namesDiv">
+      <div class="clearfix">
+        <img src="assets/img/huangguan.svg" alt="">
+      </div>
+      <p class="namesChCont clearfix">本月您已获得称号：
+        <span>登峰造极</span>
+      </p>
+      <!-- <p class="namesPmCont clearfix">综合排名：领先80%的用户</p> -->
+    </div>
+
+  </div>
+  <div class="chCanvasContent clearfix" style="position:relative;">
+    <div class="chCanvasDiv clearfix">
+      <div id="canvasCH" class="clearfix" style="width:100%;"></div>
+      <div class="lhcqCont">
+        <p>月均收益率：
+          <span>C</span>
+        </p>
+        <p>高于56%的用户</p>
+
+      </div>
+      <div class="rhgtCont">
+
+        <p>月均收益率：
+          <span>D</span>
+        </p>
+        <p>高于39%的用户</p>
+
+      </div>
+      <div class="lyxcCont">
+        <p>累计积分：
+          <span>C</span>
+        </p>
+        <p>高于69%的用户</p>
+      </div>
+      <div class="cxzlCont">
+        <p>日均交易量：
+          <span>B</span>
+        </p>
+        <p>达到70%以上</p>
+      </div>
+      <div class="dtrsCont">
+        <p>总资产：
+          <span>A</span>
+        </p>
+        <p>超过90%的用户</p>
+        <p>排名为T-1日数据</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-menu [content]="content" side="left" type="push" persistent="false" swipeEnabled="false">
+
+  <ion-header>
+
+
+  </ion-header>
+
+  <ion-content style="background-color:#898989">
+    <div class="userInfoBox clearfix">
+      <div class="userInfoBoxImg flt clearfix">
+        <div class="userInfoBoxImg_cont" (click)="goUserInfo()">
+          <img src="assets/img/1.png" alt="">
+        </div>
+      </div>
+      <div class="userInfoBoxList flt">
+        <p class="clearfix">Adam</p>
+        <p class="clearfix">
+          <span>资金账号:</span>
+          <span>123456789</span>
+        </p>
+        <p class="clearfix">
+          <span>手机账号:</span>
+          <span>123456789</span>
+        </p>
+        <p class="clearfix">
+          <span>当前积分:</span>
+          <span>2000分</span>
+        </p>
+      </div>
+    </div>
+    <div class="clearfix userInfoBoxLisst">
+      <ul class="clearfix">
+        <li class="clearfix " *ngFor="let p of pages" (click)="openPage(p)">
+          <span>
+            <!-- {{p.isShow}} -->
+            <i class="icon iconfont " [class.icon-lianxunshoujikaihu]=p.wykh [class.icon-zichan]=p.zichan [class.icon-men]=p.tg [class.icon-shangchengxian]=p.jfsc></i>
+          </span>
+          <span>{{p.title}}</span>
+        </li>
+
+      </ul>
+    </div>
+    <div class="zxLoginBox">
+      <span>注销资金账号登录</span>
+    </div>
+    <div class="exitContent clearfix">
+      联系客服 客服热线
+      <a href="tel:95578" style="color:#fff;text-decoration:none;">95578</a>
+    </div>
+  </ion-content>
+
+</ion-menu>
+
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

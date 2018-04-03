@@ -1,0 +1,111 @@
+.userFormFillContent {
+  width: 100%;
+  height: 100%;
+  background-color: #4cb0ed;
+}
+
+.userFormFillContentImg {
+  padding: 50px 0 40px;
+}
+
+.userFormFillContent img {
+  display: block;
+  margin: 0 auto;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.userFormFillList ul {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 20px 0;
+}
+
+.userFormFillList ul li {
+  height: 50px;
+  line-height: 50px;
+  list-style: none;
+  border-bottom: 1px solid #d3d3d3;
+  margin: 0 15px;
+}
+
+.userFormFillList ul li span:nth-child(1) {
+  color: #4bb0ec;
+  margin-left: 5px;
+}
+
+.userFormFillList ul li>span:nth-child(2) {
+  float: right;
+  color: #646464;
+  margin-right: 5px;
+}
+
+.userFormListFillbutton {
+  background-color: #ffa73d;
+  color: #fff;
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 1.6rem;
+}
+
+.userFormFillList ul li span input {
+  width: 30px;
+  height: 30px;
+  background-color: #9fdfff;
+  border:none;
+  border-radius: 6px;
+  width: 100%;
+  float: right;margin-top: 10px;
+  text-align: right;
+  padding-right: 10px;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.userFormFillList ul li span ion-select {
+  max-width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.userFormFillList ul li span ion-select button {
+  width: 100%;
+  height: 100%;
+  width: 30px;
+  height: 20px;
+}
+
+.userFormFillList ul li:nth-child(4) span .select-ios .select-icon {
+  width: 15px;
+  top: 15px;
+}
+
+.userFormFillList ul li:nth-child(5) span .select-ios .select-icon {
+  width: 15px;
+  top: 15px;
+}
+.userFormFillList ul li:nth-child(3) span .select-ios .select-icon {
+    width: 15px;
+    top: 15px;
+  }
+.userFormFillList ul li:nth-child(3) span:nth-child(2) {
+  float: right;
+  margin: 0 5px;
+}
+
+.userFormFillList ul li:nth-child(3) span:nth-child(3) {
+  float: right;
+  margin: 0 5px;
+  
+}
+
+.userFormFillList ul li:nth-child(3) span:nth-child(4) {
+  float: right;
+  margin: 0 5px;
+  
+}

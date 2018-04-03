@@ -1,0 +1,133 @@
+page-gp-search {
+  .toolbar-background-ios {
+    background-color: #fff!important;
+  }
+  .toolbar-title-ios {
+    color: #E32C35!important;
+  }
+  .bar-button-default-ios,
+  .bar-button-default.bar-button-ios-default,
+  .bar-button-clear-ios-default {
+    color: #E32C35!important;
+  }
+  .toolbar-ios ion-title {
+    padding: 0 40px 0 50px;
+  }
+  .toolbar .searchbar-ios .searchbar-input {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    font-size: 1.15rem;
+  }
+  .searchbar-ios .searchbar-input {
+    padding-right: 5px;
+  }
+  ion-content {
+    background-color: #e0e0e0!important;
+  }
+  ion-segment {
+    display: block;
+    width: 100%; // border-bottom: 1px solid #F39194;
+    background-color: #fff;
+    height: 36px;
+  }
+  .segment-ios .segment-button {
+    display: block;
+    width: 90px;
+    background-color: #fff;
+    float: left;
+    color: #F39194;
+    line-height: 36px;
+    height: 35px;
+    border: none;
+  }
+  .segment-ios .segment-button.segment-activated {
+    color: #E32C35;
+    font-weight: normal;
+  }
+  .searchTitleBox {
+    margin-top: 10px;
+  }
+  .item:nth-child(1) {
+    margin-top: 0;
+    border: none;
+  }
+  .list-ios>.item-block:last-child,
+  .list-ios>.item-wrapper:last-child .item-block {
+    border-bottom: none;
+    border-color: #F39194;
+  }
+  .historyContType {
+    font-size: 1.15rem;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    background-color: #ff4048;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 2px;
+  }
+  .historyContName {
+    color: #111111;
+    font-size: 1.4rem;
+    margin-left: 15px;
+    height: 25px;
+    line-height: 25px;
+    width: 70px;
+  }
+  .historyContNumber {
+    font-size: 1.43rem;
+    margin-left: 20px;
+    height: 25px;
+    line-height: 25px;
+  }
+  .label-ios {
+    vertical-align: middle;
+    line-height: 1.5;
+  }
+  .triangle2 {
+    position: absolute;
+    top: -8px;
+    left: 130px;
+    z-index: 555;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid #F39194;
+  }
+  .triangle1 {
+    position: absolute;
+    top: -8px;
+    left: 40px;
+    z-index: 555;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid #F39194;
+  }
+  .ionList {
+    position: relative;
+    border-top: 1px solid #F39194;
+  }
+  .SearchInput {
+    height: 32px;
+  }
+  .SearchInput input {
+    border: 1px solid #e0e0e0;
+    height: 100%;
+    font-size: 1.3rem;
+    padding: 0 10px 0 30px;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .inputBox {
+    position: relative
+  }
+  .inputBox ion-icon {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+  }
+}

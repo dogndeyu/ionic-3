@@ -1,0 +1,122 @@
+<ion-header class="borderBotNone">
+
+    <ion-navbar>
+        <ion-title>微学堂</ion-title>
+    </ion-navbar>
+
+</ion-header>
+<ion-content class="MSContent">
+    <div class="tab">
+        <div class="tab_box">
+            <div class="tab_boxCont1">
+                <div class="MS_title">
+                    <span class="MS_czjj">操作进阶</span>
+                    <span class="MS_Icon"><img src="assets/img/red-plane.svg"></span>
+                </div>
+                <ion-list class="MS_NessList" *ngFor="let NewList1 of NewList1s">
+                    <div class="MS_Mess">
+                        <p class="MS_contTitle">{{NewList1.contTitle}}</p>
+                        <p class="MS_date">{{NewList1.date}}</p>
+                        <div class="MS_MessImg">
+                            <img src="{{NewList1.MessImg}}">
+                        </div>
+                        <div class="MS_border"></div>
+                        <p class="MS_contNews">{{NewList1.contNews}}</p>
+                    </div>
+                </ion-list>
+            </div>
+            <div class="tab_boxCont2">
+                <div class="MS_title">
+                    <span class="MS_czjj">公告警示</span>
+                    <span class="MS_Icon"><img src="assets/img/red-plane.svg"></span>
+                </div>
+                <ion-list class="MS_NessList" *ngFor="let NewList1 of NewList1s">
+                    <div class="MS_Mess">
+                        <p class="MS_contTitle">{{NewList1.contTitle}}</p>
+                        <p class="MS_date">{{NewList1.date}}</p>
+                        <div class="MS_MessImg">
+                            <img src="{{NewList1.MessImg}}">
+                        </div>
+                        <div class="MS_border"></div>
+                        <p class="MS_contNews">{{NewList1.contNews}}</p>
+                    </div>
+                </ion-list>
+            </div>
+            <div class="tab_boxCont3">
+                <div class="MS_title">
+                    <span class="MS_czjj">新手课堂</span>
+                    <span class="MS_Icon"><img src="assets/img/red-plane.svg"></span>
+                </div>
+                <ion-list class="MS_NessList" *ngFor="let NewList1 of NewList1s">
+                    <div class="MS_Mess">
+                        <p class="MS_contTitle">{{NewList1.contTitle}}</p>
+                        <p class="MS_date">{{NewList1.date}}</p>
+                        <div class="MS_MessImg">
+                            <img src="{{NewList1.MessImg}}">
+                        </div>
+                        <div class="MS_border"></div>
+                        <p class="MS_contNews">{{NewList1.contNews}}</p>
+                    </div>
+                </ion-list>
+            </div>
+            <div class="tab_boxCont4">
+                <div class="MS_title">
+                    <span class="MS_czjj">视频专区</span>
+                    <span class="MS_Icon"><img src="assets/img/red-plane.svg"></span>
+                </div>
+                <ion-list class="MS_NessList" *ngFor="let NewList1 of NewList1s">
+                    <div class="MS_Mess">
+                        <p class="MS_contTitle">{{NewList1.contTitle}}</p>
+                        <p class="MS_date">{{NewList1.date}}</p>
+                        <div class="MS_MessImg">
+                            <img src="{{NewList1.MessImg}}">
+                        </div>
+                        <div class="MS_border"></div>
+                        <p class="MS_contNews">{{NewList1.contNews}}</p>
+                    </div>
+                </ion-list>
+            </div>
+            <div class="tab_boxCont5">备用一号</div>
+            <div class="tab_boxCont6">备用二号</div>
+        </div>
+    </div>
+</ion-content>
+<div class="tab_menu clear">
+    <ul>
+        <li id="MSTabImg" class="on" *ngFor="let MStab of MStabs">
+            <svg width="58px" height="70px" viewBox="0 0 58 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <desc>Created with Sketch.</desc>
+        <defs>
+          <path d="M28,0 L28,0 L28,0 C43.463973,-2.84068575e-15 56,12.536027 56,28 L56,70 L0,70 L0,28 L3.55271368e-15,28 C1.65892318e-15,12.536027 12.536027,2.84068575e-15 28,0 Z"
+            id="path-1"></path>
+        </defs>
+        <g id="红白基色-国元证券-微信服务号升级UI-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="微学堂" transform="translate(-197.000000, -597.000000)">
+            <g id="公告" transform="translate(198.000000, 598.000000)">
+              <g id="Rectangle-3">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#D3D3D3" stroke-width="1" d="M28,-0.5 C43.7401154,-0.5 56.5,12.2598846 56.5,28 L56.5,70.5 L-0.5,70.5 L-0.5,28 C-0.5,12.2598846 12.2598846,-0.5 28,-0.5 Z"></path>
+              </g>
+              <circle id="Oval" cx="28" cy="28" r="25"></circle>
+              <path d="M28,31 C28.6666667,33 31,36.6666667 35,42 C36.7441291,44.3255054 40.2358391,47.3415034 43,49 C46.3333333,51 49,56.6666667 51,66 L5,66 C7.16962111,57.0610953 9.83628777,51.3944286 13,49 C16.4076784,46.4209276 19.3951446,44.2328422 21,42 C24.8397936,36.6576785 27.1731269,32.9910118 28,31 Z"
+                id="Triangle" transform="translate(28.000000, 48.500000) scale(1, -1) translate(-28.000000, -48.500000) "></path>
+              <text class="text_name" font-family="PingFangSC-Semibold, PingFang SC" font-size="13" font-weight="normal" line-spacing="15"
+                letter-spacing="1" fill="#FFFFFF">
+                <tspan x="14.5" y="26">{{MStab.Qname}}</tspan>
+                <tspan x="14.5" y="41">{{MStab.Lname}}</tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+      </svg>
+        </li>
+        <!-- <img src="{{MStab.Img}}"> -->
+        <!-- <li class="on"><img src="assets/img/公告警示.svg"></li>
+        <li class="on"><img src="assets/img/新手课堂.svg"></li>
+        <li class="on"><img src="assets/img/视频专区.svg"></li>
+        <li class="on"><img src="assets/img/预加中1.svg"></li>
+        <li class="on"><img src="assets/img/预加中2.svg"></li> -->
+    </ul>
+</div>
+<script>
+</script>

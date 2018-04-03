@@ -1,0 +1,127 @@
+.ptzhdxSelect {
+  margin: 10px 10px 0 10px;
+  border: 1px solid #ddd4d4
+}
+
+.ptzhdxSelect ion-list {
+  margin: 0
+}
+
+.ptzhdxSelect .item-ios.item-block .item-inner {
+  border-bottom: none;
+}
+
+.ptzhdxSelect .select-ios {
+  padding-left: 0
+}
+
+.ptzhdxSelect .select-ios .select-icon {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+}
+
+.ptzhdsxList {
+  margin: 0 10px;
+}
+
+.ptzhdsxList ul li {
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd4d4;
+  font-size: 1.4rem;
+  color: #524f4f
+}
+
+.ptzhdsxList ul li:first-child {
+  padding-top: 0;
+}
+
+.ptzhdsxList ul li span:nth-child(1) {
+  float: left
+}
+
+.ptzhdsxList ul li span:nth-child(2) {
+  float: right
+}
+
+.ptzhdsInputBox {
+  padding: 15px;
+  height: 40px;
+}
+
+.ptzhdsInputBox div {
+  float: left;
+}
+
+.ptzhdsInputBox div:nth-child(1) {
+  width: 15%;
+  height: 40px;
+  background-color: #c6c6c6;
+  color: #fff;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.ptzhdsInputBox div:nth-child(2) {
+  width: 55%;
+  height: 40px;
+}
+
+.ptzhdsInputBox div:nth-child(2) input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border: 1px solid #ddd4d4;
+  font-size: 1.6rem;
+  padding-left: 5px;
+}
+
+.ptzhdsInputBox div:nth-child(3) {
+  width: 30%;
+  height: 40px;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: #dde2e5;
+  color: #9ea2a3;
+  line-height: 40px;
+}
+
+.ptzhdxBtn {
+  display: block;
+  margin: 50px auto 80px;
+  width: 90%;
+}
+
+.footer-menu {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #444;
+  opacity: 0.85;
+  z-index: 66;
+}
+
+.menuContent {
+  width: 25%;
+  float: left;
+  height: 100%;
+}
+
+.menuContent P:nth-child(1) {
+  text-align: center;
+}
+
+.menuContent P:nth-child(1) ion-icon {
+  font-size: 3.2rem;
+  color: #9c9c9c;
+  line-height: 0.85;
+}
+
+.menuContent P:nth-child(2) {
+  color: #fff;
+  padding-top: -10px;
+  margin-top: -4px;
+  text-align: center
+}

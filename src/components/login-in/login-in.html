@@ -1,0 +1,126 @@
+<ion-content class="loginDiv">
+  <p class="loginHeader">
+    <span>
+      <img src="" alt="">
+    </span>
+    <span>微信页面</span>
+  </p>
+
+  <div class="tabLoginBox">
+    <ion-segment id="loginTabContent" class="loginTabContent" [(ngModel)]="pet">
+      <ion-segment-button class="loginTab" value="ksdl">
+        <div>快捷登录</div>
+      </ion-segment-button>
+      <ion-segment-button class="loginTab" value="ptdl">
+        <div>普通登录</div>
+      </ion-segment-button>
+
+
+    </ion-segment>
+
+    <div class="zfbk_tabContent" [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'ksdl'">
+        <form [formGroup]="loginForm" action="" (ngSubmit)="login(loginForm.value)">
+          <div class="zhlxBg">
+            <div class="zhlxCont">
+
+              <ion-icon name="ios-person-outline"></ion-icon>
+              <input type="text" placeholder="身份证/资金账号" clearInput=true [formControl]="username">
+            </div>
+            <div *ngIf="username.hasError('required') && username.touched" class="error-message">* 请输入用户名</div>
+            <div *ngIf="(username.hasError('minlength')||username.hasError('maxlength')||username.hasError('pattern')) && username.touched"
+              class="error-message">* 请输入正确的电话号码</div>
+          </div>
+          <div class="zhlxPasswordBg">
+            <div class="zhlxPasswordCont">
+              <!-- <ion-icon name="unlock"></ion-icon> -->
+              <ion-icon name="ios-unlock-outline"></ion-icon>
+              <input type="text" placeholder="请输入一户通密码" [formControl]="password">
+            </div>
+            <div *ngIf="password.hasError('required') && password.touched" class="error-message">* 请输入密码</div>
+            <div *ngIf="(password.hasError('minlength')) && password.touched" class="error-message">* 密码长度最少为六位</div>
+          </div>
+          <div class="ksdlToggle">
+            <p>
+              <span class="flt">请为我开通手机交易委托权限</span>
+              <ion-toggle class="frt"></ion-toggle>
+            </p>
+          </div>
+          <div class="ksdlBtnCont">
+            <button class="ksdlBtn">登&nbsp;&nbsp;录</button>
+          </div>
+        </form>
+      </ion-list>
+      <ion-list *ngSwitchCase="'ptdl'">
+        <form action="" (ngSubmit)="logForm()">
+          <div class="loginArea">
+            <ion-list inset>
+              选择营业部
+              <ion-icon class="login_rightJt" name="arrow-forward"></ion-icon>
+            </ion-list>
+            <hr style="border-top:1px #94a1f0 dashed;height:0;margin:0" />
+            <ion-list inset>
+              资金账号
+              <ion-icon class="login_rightJt" name="ios-arrow-down"></ion-icon>
+            </ion-list>
+          </div>
+          <div class="zhlxBg">
+            <div class="zhlxCont">
+
+              <ion-icon name="ios-person-outline"></ion-icon>
+              <input type="text" placeholder="身份证/资金账号">
+            </div>
+          </div>
+          <div class="zhlxPasswordBg">
+            <div class="zhlxPasswordCont">
+              <!-- <ion-icon name="unlock"></ion-icon> -->
+              <ion-icon name="ios-unlock-outline"></ion-icon>
+              <input type="text" placeholder="请输入一户通密码">
+            </div>
+          </div>
+          <div class="ksdlToggle">
+            <p>
+              <span class="flt">请为我开通手机交易委托权限</span>
+              <ion-toggle class="frt"></ion-toggle>
+            </p>
+          </div>
+          <div class="ksdlBtnCont">
+            <button class="ksdlBtn">登&nbsp;&nbsp;录</button>
+          </div>
+        </form>
+      </ion-list>
+
+    </div>
+
+    <div class="khTips">
+      还没有账户? 三分钟
+      <span class="colorTips">开户</span>，畅享极速交易。您在操作中有任何疑问，请致电：
+      <span class="colorTips">95521</span>
+    </div>
+  </div>
+  <div class="my-zxg">
+    <p class="f100" align="center">版权所有 2016(沪ICP证B2-20040408-5)国泰君安证券股份有限公司(3.0.0.20160918)</p>
+    <div class="">
+      <div class="f110 ">
+        <span class="">
+          <ion-icon class="f170" ios="ios-call" md="md-call"></ion-icon>
+        </span>
+        <span class="">95521</span>
+      </div>
+      <div class="f110 ">
+        <span class="">
+          <ion-icon class="f170" ios="ios-mail" md="md-mail"></ion-icon>
+        </span>
+        <span class="">95521@gtjas.com</span>
+      </div>
+      <div class="f110 ">
+        <span class="">
+          <ion-icon class="f170" ios="ios-filing" md="md-filing"></ion-icon>
+        </span>
+        <span class=""> 021-38670666</span>
+      </div>
+
+
+    </div>
+  </div>
+</ion-content>

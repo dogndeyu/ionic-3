@@ -1,0 +1,21 @@
+.risePlateLists_tabContent ion-col:nth-child(1) p:nth-child(1) {
+  line-height: 2.4rem;
+}
+
+.risePlateLists_tabContent ion-col:nth-child(1) p:nth-child(2) {
+  font-size: 1.2rem;
+  color: #8d8d8d;
+  line-height: 1.8rem;
+}
+
+.risePlateLists_tabContent {
+  padding: 2px 5px;
+}
+
+.risePlateLists_tabContent ion-col:nth-child(2) p {
+  padding-top: 9px;
+}
+
+.risePlateLists_tabContent:nth-child(2n) {
+  background-color: #fafafa
+}

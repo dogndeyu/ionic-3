@@ -1,0 +1,70 @@
+<ion-header class="homeHeader">
+  <ion-navbar id="homeHeader">
+    <ion-title class="homeTitle">
+      自选
+    </ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content id="homeContent">
+  <div>
+    <ion-list id="zxTabContent" class="clearfix zxTabContent">
+      <div id="wdzxContent" class="wdzxContent">
+        <div class="wdzxContent_left">我的自选
+          <span></span>
+        </div>
+        <div class="wdzxContent_right">
+          <div class="wdzxContent_right_cont" id="wdzxContent_right_cont">
+            <span>最新</span>
+            <span>涨幅</span>
+            <span>涨跌</span>
+            <span>涨速</span>
+            <span>换手</span>
+            <span>成交量</span>
+            <span>成交额</span>
+            <span>量出</span>
+            <span>现手</span>
+            <span>开盘</span>
+            <span>昨收</span>
+            <span>最高</span>
+            <span>最低</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="clearfix wozxFooter" style="background-color:#fff;">
+        <div class="wozxFooter_left">
+          <div *ngFor="let zfb of zfbs" class="wozxFooter_leftCont">
+            <div>{{zfb.name}}</div>
+            <div>{{zfb.number}}</div>
+          </div>
+        </div>
+        <div class="wozxFooter_right">
+          <div id="wozxFooter_rightCont" class="wozxFooter_rightCont" style="position:relative;">
+            <div *ngFor="let zfb of zfbs" style="position:relative">
+              <span>{{zfb.zx}}</span>
+              <span>{{zfb.zf}}</span>
+              <span>{{zfb.zd}}</span>
+              <span>{{zfb.zs}}</span>
+              <span>{{zfb.hs}}</span>
+              <span>{{zfb.cjl}}</span>
+              <span>{{zfb.cje}}</span>
+              <span>{{zfb.lc}}</span>
+              <span>{{zfb.xs}}</span>
+              <span>{{zfb.kp}}</span>
+              <span>{{zfb.zs}}</span>
+              <span>{{zfb.zg}}</span>
+              <span>{{zfb.zd}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-list>
+
+
+  </div>
+</ion-content>

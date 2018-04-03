@@ -1,0 +1,37 @@
+<ion-header class="borderBotNone">
+
+  <ion-navbar>
+    <ion-title>我的积分商城</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <div class="myjfContent">
+    <div class="myjf_topCon">
+      <div class="jfRule">
+        <span>
+          <img src="assets/img/306wenhao.svg">积分规则</span>
+      </div>
+      <div class="jfcircle">
+        <span class="jfYBnum">
+          <p>元宝</p>
+          <p>2,000</p>
+        </span>
+      </div>
+    </div>
+    <span class="myjf_jfmxTitle">积分明细</span>
+    <div class="myjf_bottomCon">
+      <ion-list>
+        <div class="row jf_detail" *ngFor="let item of items">
+          <div class="col col-70 jf_detailtime">
+            <p>{{item.Reason}}</p>
+            <p>{{item.Date}}</p>
+          </div>
+          <div class="col col-30 jf_detailcount">
+            <p [ngStyle]="{'color':item.Count < '0' ? '#16B56B' : '#F63146' }">{{item.Count}}</p>
+          </div>
+        </div>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

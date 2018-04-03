@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>
+      当日新股
+      <span style="position:relative">
+          <ion-icon ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+          <ion-icon style="position:absolute; top:7px; left:0" ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        </span>
+
+    </ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="clearfix drxgContent">
+  <p class="clearfix sgxdP">我的申购限度</p>
+  <div class="drxgCont clearfix">
+    <div class="clearfix flt drxgContLeft">
+      <p>沪</p>
+      <p><span>1000</span><span>股</span></p>
+    </div>
+    <div class="clearfix flt drxgContLeft">
+      <p>深</p>
+      <p><span>1000</span><span>股</span></p>
+      <div class="clearfix">
+        <span>新股新规</span>&nbsp;&nbsp;
+        <span> <ion-icon name="arrow-forward"></ion-icon></span>
+      </div>
+    </div>
+
+  </div>
+  <div class="drxgLink">
+    <div class="flt" (click)="goZqmxPage()">
+      <p>0</p>
+      <p>近期新股</p>
+      <span><ion-icon name="arrow-forward"></ion-icon></span>
+    </div>
+    <div class="flt">
+      <p>0</p>
+      <p>近期新股</p>
+      <span><ion-icon name="arrow-forward"></ion-icon></span>
+    </div>
+  </div>
+  <div class="subTitle">
+    <ion-grid class="clearfix">
+      <ion-row class="clearfix">
+        <ion-col align='center'>股票名称</ion-col>
+        <ion-col align='center'>申请代码</ion-col>
+        <ion-col align='center'>申购上线</ion-col>
+        <ion-col align='center'>发行价</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="subTitleList">
+    <ion-grid class="clearfix">
+      <ion-row *ngFor="let item of items" class="clearfix">
+        <ion-col align='center'>
+          <p>{{item.name}}</p>
+          <p>{{item.number}}</p>
+        </ion-col>
+        <ion-col align='center'>{{item.Up}}</ion-col>
+        <ion-col align='center'>￥{{item.price}}</ion-col>
+        <ion-col align='center'>
+          <span style="color:#5c99be;">申购</span>
+          <span><ion-icon name="arrow-forward"></ion-icon></span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="footer-menu clearfix">
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-search" md="ios-search-outline"></ion-icon>
+      </p>
+      <p>我要打新</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon name="trending-up"></ion-icon>
+      </p>
+      <p>新股申购</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-reorder" md="md-reorder"></ion-icon>
+      </p>
+      <p>申购查询</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon>
+      </p>
+      <p>新股日历</p>
+    </div>
+  </div>
+  <button class="drxgBtn" ion-button color="primary" round>一键申购</button>
+</ion-content>

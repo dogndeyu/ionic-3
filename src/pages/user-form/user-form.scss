@@ -1,0 +1,54 @@
+.userFormContent {
+  width: 100%;
+  height: 100%;
+  background-color: #4cb0ed;
+}
+
+.userFormContentImg {
+  padding: 50px 0 40px;
+}
+
+.userFormContent img {
+  display: block;
+  margin: 0 auto;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.userFormList ul {
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 20px 0;
+}
+
+.userFormList ul li {
+  height: 50px;
+  line-height: 50px;
+  list-style: none;
+  border-bottom: 1px solid #d3d3d3;
+  margin: 0 15px;
+}
+
+.userFormList ul li span:nth-child(1) {
+  color: #4bb0ec;
+  margin-left: 5px;
+}
+
+.userFormList ul li span:nth-child(2) {
+  float: right;
+  color: #646464;
+  margin-right: 5px;
+}
+
+.userFormListbutton {
+  background-color: #ffa73d;
+  color: #fff;
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 1.6rem;
+}

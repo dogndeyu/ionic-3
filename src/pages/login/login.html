@@ -1,0 +1,376 @@
+<div (click)='dismiss()' class="contentTOP" style=""></div>
+<div (click)='dismiss()' class="contentBOTTOM" style=""></div>
+<div (click)='dismiss()' class="contentLEFT" style=""></div>
+<div (click)='dismiss()' class="contentRIGHT" style=""></div>
+<ion-content class="loginDiv">
+
+  <ion-slides spaceBetween='20'>
+
+    <ion-slide style="height:100%;">
+      <div class="BoxbackGround">
+        <div></div>
+      </div>
+      <div class="headPicture">
+        <img [src]="picture" alt="">
+      </div>
+      <div class="tabLoginBox">
+        <ion-segment id="loginTabContent" class="loginTabContent" [(ngModel)]="pet">
+          <ion-segment-button class="loginTab" value="ksdl">
+            <div>普通交易</div>
+          </ion-segment-button>
+          <ion-segment-button class="loginTab" value="ptdl">
+            <div>双融交易</div>
+          </ion-segment-button>
+        </ion-segment>
+
+        <!-- <div class="zfbk_tabContent" [ngSwitch]="pet">
+          <ion-list *ngSwitchCase="'ksdl'">
+            <form [formGroup]="loginForm" action="" (ngSubmit)="login(loginForm.value)">
+              <div class="zhlxBg">
+                <div class="zhlxCont">
+
+                  <ion-icon name="ios-person-outline"></ion-icon>
+                  <input type="text" placeholder="身份证/资金账号" clearInput=true [formControl]="username">
+                </div>
+                <div *ngIf="username.hasError('required') && username.touched" class="error-message">* 请输入用户名</div>
+                <div *ngIf="(username.hasError('minlength')||username.hasError('maxlength')||username.hasError('pattern')) && username.touched"
+                  class="error-message">* 请输入正确的电话号码</div>
+              </div>
+              <div class="zhlxPasswordBg">
+                <div class="zhlxPasswordCont">
+                  <ion-icon name="ios-unlock-outline"></ion-icon>
+                  <input type="text" placeholder="请输入一户通密码" [formControl]="password">
+                </div>
+                <div *ngIf="password.hasError('required') && password.touched" class="error-message">* 请输入密码</div>
+                <div *ngIf="(password.hasError('minlength')) && password.touched" class="error-message">* 密码长度最少为六位</div>
+              </div>
+              <div class="ksdlToggle">
+                <p>
+                  <span class="flt">请为我开通手机交易委托权限</span>
+                  <ion-toggle class="frt"></ion-toggle>
+                </p>
+              </div>
+              <div class="ksdlBtnCont">
+                <button class="ksdlBtn">登&nbsp;&nbsp;录</button>
+              </div>
+            </form>
+          </ion-list>
+          <ion-list *ngSwitchCase="'ptdl'">
+            <form action="" (ngSubmit)="logForm()">
+              <div class="loginArea">
+                <ion-list inset>
+                  选择营业部
+                  <ion-icon class="login_rightJt" name="arrow-forward"></ion-icon>
+                </ion-list>
+                <hr style="border-top:1px #94a1f0 dashed;height:0;margin:0" />
+                <ion-list inset>
+                  资金账号
+                  <ion-icon class="login_rightJt" name="ios-arrow-down"></ion-icon>
+                </ion-list>
+              </div>
+              <div class="zhlxBg">
+                <div class="zhlxCont">
+
+                  <ion-icon name="ios-person-outline"></ion-icon>
+                  <input type="text" placeholder="身份证/资金账号">
+                </div>
+              </div>
+              <div class="zhlxPasswordBg">
+                <div class="zhlxPasswordCont">
+                  <ion-icon name="ios-unlock-outline"></ion-icon>
+                  <input type="text" placeholder="请输入一户通密码">
+                </div>
+              </div>
+              <div class="ksdlToggle">
+                <p>
+                  <span class="flt">请为我开通手机交易委托权限</span>
+                  <ion-toggle class="frt"></ion-toggle>
+                </p>
+              </div>
+              <div class="ksdlBtnCont">
+                <button class="ksdlBtn">登&nbsp;&nbsp;录</button>
+              </div>
+            </form>
+          </ion-list>
+
+        </div> -->
+        <div class="zfbk_tabContent" [ngSwitch]="pet">
+          <ion-list *ngSwitchCase="'ksdl'">
+            <form [formGroup]="loginForm" action="" (ngSubmit)="login(loginForm.value)">
+              <div class="zhlxCont">
+                <ion-icon name="ios-person-outline"></ion-icon>
+                <input type="text" placeholder="请您输入资金账号" clearInput=true [formControl]="username">
+              </div>
+              <div class="zhlxPasswordCont">
+                <ion-icon name="ios-unlock-outline"></ion-icon>
+                <input type="text" placeholder="请您输入资金密码" [formControl]="password">
+              </div>
+              <p class="khTipsCont">还没有开户？快来
+                <span style="color:rgba(63,119,227,1)">下载开户APP!</span>
+              </p>
+              <p class="khInformCont">分分钟开户，畅享优质服务!</p>
+              <button ion-button color="danger" class="ksdlBtn">资金账号登录并绑定</button>
+              <p class="khReadTips clearfix">
+                <ion-checkbox color='danger'></ion-checkbox>
+                <span>我已阅读并同意</span>
+                <span class="gyfwxyCont">《国元服务协议》</span>
+              </p>
+            </form>
+          </ion-list>
+          <ion-list *ngSwitchCase="'ptdl'">
+            <form action="" (ngSubmit)="logForm()">
+              <div class="zhlxCont">
+                <ion-icon name="ios-person-outline"></ion-icon>
+                <input type="text" placeholder="请您输入资金账号" clearInput=true [formControl]="username">
+              </div>
+              <div class="zhlxPasswordCont">
+                <ion-icon name="ios-unlock-outline"></ion-icon>
+                <input type="text" placeholder="请您输入资金密码" [formControl]="password">
+              </div>
+              <p class="khTipsCont">还没有开户？快来
+                <span style="color:rgba(63,119,227,1)">下载开户APP!</span>
+              </p>
+              <p class="khInformCont">分分钟开户，畅享优质服务!</p>
+              <button ion-button color="danger" class="ksdlBtn">资金账号登录并绑定</button>
+              <p class="khReadTips clearfix">
+                <ion-checkbox color='danger'></ion-checkbox>
+                <span>我已阅读并同意</span>
+                <span class="gyfwxyCont">《国元服务协议》</span>
+              </p>
+            </form>
+          </ion-list>
+
+        </div>
+
+
+      </div>
+
+    </ion-slide>
+
+    <ion-slide style="height:100%;">
+      <div class="BoxbackGround">
+        <div></div>
+      </div>
+      <div class="headPicture">
+        <img [src]="picture" alt="">
+      </div>
+      <div class="tabLoginBox2">
+        <div class="zfbk_tabContent">
+          <ion-list>
+            <form action="">
+
+              <div class="zhlxTelephone">
+                <ion-icon ios="ios-phone-portrait-outline" md="ios-phone-portrait-outline"></ion-icon>
+                <input type="text" placeholder="请输入手机号码">
+              </div>
+              <div class="zhlxIdCode">
+                <ion-icon name="ios-unlock-outline"></ion-icon>
+                <input type="text" placeholder="请输入验证码">
+                <img src='assets/img/example.png' alt="">
+              </div>
+              <div class="zhlxEmail">
+                <ion-icon ios="ios-mail-outline" md="ios-mail-outline"></ion-icon>
+                <input type="text" placeholder="短信验证码">
+                <input (click)="sendMessage()" type="button" [disabled]="viald" value="{{messsageName}}" placeholder="发送短信">
+              </div>
+              <button ion-button color="danger" class="ksdlBtn">资金账号登录并绑定</button>
+            </form>
+          </ion-list>
+
+
+        </div>
+
+
+      </div>
+    </ion-slide>
+
+
+
+  </ion-slides>
+</ion-content>
+<ion-content class="loginDiv">
+
+  <ion-slides spaceBetween='20'>
+
+    <ion-slide style="height:100%;">
+      <div class="BoxbackGround">
+        <div></div>
+      </div>
+      <div class="headPicture">
+        <img [src]="picture" alt="">
+      </div>
+      <div class="tabLoginBox">
+        <ion-segment id="loginTabContent" class="loginTabContent" [(ngModel)]="pet">
+          <ion-segment-button class="loginTab" value="ksdl">
+            <div>普通交易</div>
+          </ion-segment-button>
+          <ion-segment-button class="loginTab" value="ptdl">
+            <div>双融交易</div>
+          </ion-segment-button>
+        </ion-segment>
+
+        <!-- <div class="zfbk_tabContent" [ngSwitch]="pet">
+          <ion-list *ngSwitchCase="'ksdl'">
+            <form [formGroup]="loginForm" action="" (ngSubmit)="login(loginForm.value)">
+              <div class="zhlxBg">
+                <div class="zhlxCont">
+
+                  <ion-icon name="ios-person-outline"></ion-icon>
+                  <input type="text" placeholder="身份证/资金账号" clearInput=true [formControl]="username">
+                </div>
+                <div *ngIf="username.hasError('required') && username.touched" class="error-message">* 请输入用户名</div>
+                <div *ngIf="(username.hasError('minlength')||username.hasError('maxlength')||username.hasError('pattern')) && username.touched"
+                  class="error-message">* 请输入正确的电话号码</div>
+              </div>
+              <div class="zhlxPasswordBg">
+                <div class="zhlxPasswordCont">
+                  <ion-icon name="ios-unlock-outline"></ion-icon>
+                  <input type="text" placeholder="请输入一户通密码" [formControl]="password">
+                </div>
+                <div *ngIf="password.hasError('required') && password.touched" class="error-message">* 请输入密码</div>
+                <div *ngIf="(password.hasError('minlength')) && password.touched" class="error-message">* 密码长度最少为六位</div>
+              </div>
+              <div class="ksdlToggle">
+                <p>
+                  <span class="flt">请为我开通手机交易委托权限</span>
+                  <ion-toggle class="frt"></ion-toggle>
+                </p>
+              </div>
+              <div class="ksdlBtnCont">
+                <button class="ksdlBtn">登&nbsp;&nbsp;录</button>
+              </div>
+            </form>
+          </ion-list>
+          <ion-list *ngSwitchCase="'ptdl'">
+            <form action="" (ngSubmit)="logForm()">
+              <div class="loginArea">
+                <ion-list inset>
+                  选择营业部
+                  <ion-icon class="login_rightJt" name="arrow-forward"></ion-icon>
+                </ion-list>
+                <hr style="border-top:1px #94a1f0 dashed;height:0;margin:0" />
+                <ion-list inset>
+                  资金账号
+                  <ion-icon class="login_rightJt" name="ios-arrow-down"></ion-icon>
+                </ion-list>
+              </div>
+              <div class="zhlxBg">
+                <div class="zhlxCont">
+
+                  <ion-icon name="ios-person-outline"></ion-icon>
+                  <input type="text" placeholder="身份证/资金账号">
+                </div>
+              </div>
+              <div class="zhlxPasswordBg">
+                <div class="zhlxPasswordCont">
+                  <ion-icon name="ios-unlock-outline"></ion-icon>
+                  <input type="text" placeholder="请输入一户通密码">
+                </div>
+              </div>
+              <div class="ksdlToggle">
+                <p>
+                  <span class="flt">请为我开通手机交易委托权限</span>
+                  <ion-toggle class="frt"></ion-toggle>
+                </p>
+              </div>
+              <div class="ksdlBtnCont">
+                <button class="ksdlBtn">登&nbsp;&nbsp;录</button>
+              </div>
+            </form>
+          </ion-list>
+
+        </div> -->
+        <div class="zfbk_tabContent" [ngSwitch]="pet">
+          <ion-list *ngSwitchCase="'ksdl'">
+            <form [formGroup]="loginForm" action="" (ngSubmit)="login(loginForm.value)">
+              <div class="zhlxCont">
+                <ion-icon name="ios-person-outline"></ion-icon>
+                <input type="text" placeholder="请您输入资金账号" clearInput=true [formControl]="username">
+              </div>
+              <div class="zhlxPasswordCont">
+                <ion-icon name="ios-unlock-outline"></ion-icon>
+                <input type="text" placeholder="请您输入资金密码" [formControl]="password">
+              </div>
+              <p class="khTipsCont">还没有开户？快来
+                <span style="color:rgba(63,119,227,1)">下载开户APP!</span>
+              </p>
+              <p class="khInformCont">分分钟开户，畅享优质服务!</p>
+              <button ion-button color="danger" class="ksdlBtn">资金账号登录并绑定</button>
+              <p class="khReadTips clearfix">
+                <ion-checkbox color='danger'></ion-checkbox>
+                <span>我已阅读并同意</span>
+                <span class="gyfwxyCont">《国元服务协议》</span>
+              </p>
+            </form>
+          </ion-list>
+          <ion-list *ngSwitchCase="'ptdl'">
+            <form action="" (ngSubmit)="logForm()">
+              <div class="zhlxCont">
+                <ion-icon name="ios-person-outline"></ion-icon>
+                <input type="text" placeholder="请您输入资金账号" clearInput=true [formControl]="username">
+              </div>
+              <div class="zhlxPasswordCont">
+                <ion-icon name="ios-unlock-outline"></ion-icon>
+                <input type="text" placeholder="请您输入资金密码" [formControl]="password">
+              </div>
+              <p class="khTipsCont">还没有开户？快来
+                <span style="color:rgba(63,119,227,1)">下载开户APP!</span>
+              </p>
+              <p class="khInformCont">分分钟开户，畅享优质服务!</p>
+              <button ion-button color="danger" class="ksdlBtn">资金账号登录并绑定</button>
+              <p class="khReadTips clearfix">
+                <ion-checkbox color='danger'></ion-checkbox>
+                <span>我已阅读并同意</span>
+                <span class="gyfwxyCont">《国元服务协议》</span>
+              </p>
+            </form>
+          </ion-list>
+
+        </div>
+
+
+      </div>
+
+    </ion-slide>
+
+    <ion-slide style="height:100%;">
+      <div class="BoxbackGround">
+        <div></div>
+      </div>
+      <div class="headPicture">
+        <img [src]="picture" alt="">
+      </div>
+      <div class="tabLoginBox2">
+        <div class="zfbk_tabContent">
+          <ion-list>
+            <form action="">
+
+              <div class="zhlxTelephone">
+                <ion-icon ios="ios-phone-portrait-outline" md="ios-phone-portrait-outline"></ion-icon>
+                <input type="text" placeholder="请输入手机号码">
+              </div>
+              <div class="zhlxIdCode">
+                <ion-icon name="ios-unlock-outline"></ion-icon>
+                <input type="text" placeholder="请输入验证码">
+                <img src='assets/img/example.png' alt="">
+              </div>
+              <div class="zhlxEmail">
+                <ion-icon ios="ios-mail-outline" md="ios-mail-outline"></ion-icon>
+                <input type="text" placeholder="短信验证码">
+                <input (click)="sendMessage()" type="button" [disabled]="viald" value="{{messsageName}}" placeholder="发送短信">
+              </div>
+              <button ion-button color="danger" class="ksdlBtn">资金账号登录并绑定</button>
+            </form>
+          </ion-list>
+
+
+        </div>
+
+
+      </div>
+    </ion-slide>
+
+
+
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>{{risePlateName}}</ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconSearch" ios="ios-search-outline"></ion-icon>
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-row class="risePlateLists_tabContent" *ngFor="let item of items">
+    <ion-col col-4>
+      <p>{{item.name}}</p>
+      <p>{{item.number}}</p>
+    </ion-col>
+    <ion-col col-4>
+      <p style="text-align:center">{{item.price}}</p>
+    </ion-col>
+    <ion-col col-4>
+      <span class="flt">{{item.zfPrice}}</span>
+      <span class="frt">{{item.lv}}</span>
+    </ion-col>
+  </ion-row>
+  <div class="my-zxg">
+    <p class="f100" align="center">版权所有 2016(沪ICP证B2-20040408-5)国泰君安证券股份有限公司(3.0.0.20160918)</p>
+    <div class="">
+      <div class="f110 ">
+        <span class="">
+            <ion-icon class="f170" ios="ios-call" md="md-call"></ion-icon>
+            </span>
+        <span class="">95521</span>
+      </div>
+      <div class="f110 ">
+        <span class="">
+            <ion-icon class="f170" ios="ios-mail" md="md-mail"></ion-icon>
+              </span>
+        <span class="">95521@gtjas.com</span>
+      </div>
+      <div class="f110 ">
+        <span class="">
+                    <ion-icon class="f170" ios="ios-filing" md="md-filing"></ion-icon>
+                </span>
+        <span class=""> 021-38670666</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

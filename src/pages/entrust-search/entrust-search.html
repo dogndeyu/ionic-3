@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>
+      委托查询
+      <span style="position:relative">
+          <ion-icon ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+          <ion-icon style="position:absolute; top:7px; left:0" ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        </span>
+
+    </ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-segment class="zxContent" [(ngModel)]="pet">
+    <ion-segment-button class="zxTab" value="wdph_cont">
+      当日委托
+    </ion-segment-button>
+    <ion-segment-button class="zxTab" value="wdzq_cont">
+      历史委托
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="zfbk_tabContent" [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'wdph_cont'">
+      <!-- <div class="wdph_cont_title clearfix">
+        <div class="flt clearfix">
+          <span><ion-icon ios="ios-time-outline" md="ios-time-outline"></ion-icon></span>
+          <span>起始时间</span>
+        </div>
+        <div class="flt clearfix">
+          <span><ion-icon ios="ios-time-outline" md="ios-time-outline"></ion-icon></span>
+          <span>截止时间</span>
+        </div>
+      </div>
+      <div class="wdph_cont_cont clearfix">
+        <div class="flt clearfix">
+          <span>起始时间</span>
+          <span><ion-icon name="arrow-forward"></ion-icon></span>
+        </div>
+        <div class="frt clearfix">
+          <span>起始时间</span>
+          <span><ion-icon name="arrow-forward"></ion-icon></span>
+        </div>
+      </div> -->
+      <div class="wdph_cont_tips clearfix">
+        <p>您当日没有委托信息</p>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'wdzq_cont'">
+      <div class="wdph_cont_title clearfix">
+        <div class="flt clearfix">
+          <span><ion-icon ios="ios-time-outline" md="ios-time-outline"></ion-icon></span>
+          <span>起始时间</span>
+        </div>
+        <div class="flt clearfix">
+          <span><ion-icon ios="ios-time-outline" md="ios-time-outline"></ion-icon></span>
+          <span>截止时间</span>
+        </div>
+      </div>
+      <div class="wdph_cont_cont clearfix">
+        <div class="flt clearfix">
+          <span>起始时间</span>
+          <span><ion-icon name="arrow-forward"></ion-icon></span>
+        </div>
+        <div class="frt clearfix">
+          <span>起始时间</span>
+          <span><ion-icon name="arrow-forward"></ion-icon></span>
+        </div>
+      </div>
+      <div class="wdph_cont_tips clearfix">
+        <p>您当日没有委托信息</p>
+      </div>
+
+    </ion-list>
+
+  </div>
+  <div class="myPositionBottom clearfix">
+    <ul class="clearfix">
+      <li class="clearfix">
+        <div>
+          <ion-icon ios="ios-trending-up" md="md-trending-up"></ion-icon>
+        </div>
+        <p>持仓</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <ion-icon name="ios-basket-outline"></ion-icon>
+        </div>
+        <p>买</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <ion-icon name="ios-cart-outline"></ion-icon>
+        </div>
+        <p>卖</p>
+      </li>
+      <li class="clearfix" (click)="goEntrustSearch()">
+        <div>
+          <ion-icon name="ios-hand-outline"></ion-icon>
+        </div>
+        <p>委托</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <ion-icon name="ios-apps-outline"></ion-icon>
+        </div>
+        <p>持仓</p>
+      </li>
+    </ul>
+  </div>
+</ion-content>

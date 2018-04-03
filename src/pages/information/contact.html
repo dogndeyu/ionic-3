@@ -1,0 +1,126 @@
+<ion-content style="padding-bottom:40px;">
+  <div class="swiper-container swiper1" style="position:absolute;top:0;left:0;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide selected">国元视点</div>
+      <div class="swiper-slide">双融专利</div>
+      <div class="swiper-slide">实战传真</div>
+      <div class="swiper-slide">盘面追踪</div>
+      <div class="swiper-slide">事件驱逐</div>
+
+    </div>
+  </div>
+
+
+  <div style="position:absolute;top:40px;left:0;bottom:0;overflow-y:scroll;width:100%;">
+    <div class="swiper-container swiper2">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="waterFallContent" style="margin-left:10px;height:100%;">
+            <div class="waterfall">
+              <div *ngFor="let img_data of img_datas" class="item">
+                <img src="{{img_data.src}}">
+                <div class="pContent">
+                  <p class="zxPbl_title">{{img_data.title}}</p>
+                  <p class="zxPbl_subtitle">{{img_data.subtitle}}</p>
+                  <p class="zxPbl_date">{{img_data.date}}</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide ">
+          <div class="waterFallContent" style="margin-left:10px;height:100%">
+            <div class="waterfall">
+              <div *ngFor="let img_data of img_datas" class="item">
+                <img src="{{img_data.src}}">
+                <div class="pContent">
+                  <p class="zxPbl_title">{{img_data.title}}</p>
+                  <p class="zxPbl_subtitle">{{img_data.subtitle}}</p>
+                  <p class="zxPbl_date">{{img_data.date}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide ">
+          <div class="waterFallContent" style="margin-left:10px;height:100%">
+            <div class="waterfall">
+              <div *ngFor="let img_data of img_datas" class="item">
+                <img src="{{img_data.src}}">
+                <div class="pContent">
+                  <p class="zxPbl_title">{{img_data.title}}</p>
+                  <p class="zxPbl_subtitle">{{img_data.subtitle}}</p>
+                  <p class="zxPbl_date">{{img_data.date}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide ">
+          <div class="waterFallContent" style="margin-left:10px;height:100%;">
+            <div class="waterfall">
+              <div *ngFor="let img_data of img_datas" class="item">
+                <img src="{{img_data.src}}">
+                <div class="pContent">
+                  <p class="zxPbl_title">{{img_data.title}}</p>
+                  <p class="zxPbl_subtitle">{{img_data.subtitle}}</p>
+                  <p class="zxPbl_date">{{img_data.date}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide ">
+          <div class="waterFallContent" style="margin-left:10px;height:100%;">
+            <div class="waterfall">
+              <div *ngFor="let img_data of img_datas" class="item">
+                <img src="{{img_data.src}}">
+                <div class="pContent">
+                  <p class="zxPbl_title">{{img_data.title}}</p>
+                  <p class="zxPbl_subtitle">{{img_data.subtitle}}</p>
+                  <p class="zxPbl_date">{{img_data.date}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- <ion-scroll #scroll scrollX="true" style="width:100%;white-space: nowrap;">
+    <div class="zixunTitle clearfix">
+  
+      <div (click)="goToSlide1()">slide</div>
+      <div (click)="goToSlide2()">slide</div>
+      <div (click)="goToSlide3()"> slide</div>
+      <div (click)="goToSlide4()">slide</div>
+      <div (click)="goToSlide5()">slide</div>
+
+    </div>
+  </ion-scroll>
+  <ion-slides (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides> -->
+</ion-content>
+<!-- <div  [ngClass]="(curId == this.item.id) ?'active':''" (click)="goToSlide(this.item.id,i)" *ngFor="let item of items; index as i"
+        style="">
+        {{item.title}}
+      </div> -->

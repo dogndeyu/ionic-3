@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>
+      普通账户打新
+      <span style="position:relative">
+        <ion-icon ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        <ion-icon style="position:absolute; top:7px; left:0" ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+      </span>
+
+    </ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <div class="ptzhdxSelect">
+    <ion-item>
+      <ion-select [(ngModel)]="gender">
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+  <div class="ptzhdsxList clearfix">
+    <ul class="clearfix">
+      <li class="clearfix">
+        <span>股东用户</span>
+        <span>AA63364179</span>
+      </li>
+      <li>
+        <span>发行价</span>
+        <span>￥26.8500</span>
+      </li>
+      <li>
+        <span>申购上限</span>
+        <span>9000</span>
+      </li>
+      <li>
+        <span>市值申购上限</span>
+        <span>2000</span>
+      </li>
+    </ul>
+  </div>
+  <div class="ptzhdsInputBox clearfix">
+    <div class="clearfix">
+      <ion-icon name="reorder"></ion-icon>
+    </div>
+    <div class="clearfix">
+      <input type="text">
+    </div>
+    <div class="clearfix">
+      可买1000股
+    </div>
+  </div>
+  <button class="ptzhdxBtn" ion-button color="danger" round>申购</button>
+  <div class="footer-menu clearfix">
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-search" md="ios-search-outline"></ion-icon>
+      </p>
+      <p>我要打新</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon name="trending-up"></ion-icon>
+      </p>
+      <p>新股申购</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-reorder" md="md-reorder"></ion-icon>
+      </p>
+      <p>申购查询</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon>
+      </p>
+      <p>新股日历</p>
+    </div>
+  </div>
+</ion-content>

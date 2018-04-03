@@ -1,0 +1,86 @@
+<!--
+  Generated template for the GrzxPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="borderBotNone">
+
+  <ion-navbar>
+    <ion-title>我的个人资料</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="userInfo">
+  <div class="userInfoCont">
+    <div class="headPicture">
+      <img [src]="picture" alt="">
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3>昵称</ion-col>
+        <ion-col col-9 align='right'>
+          <ion-input class="" align='right' type="text" value="" placeholder="未设置"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-3>手机号</ion-col>
+        <ion-col col-9 align='right'>
+          <ion-input class="" align='right' type="text" value="" placeholder="未设置"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ionRowtDate">
+        <ion-col col-3>生日</ion-col>
+        <ion-col col-9 align='right'>
+          <ion-datetime cancelText="取消" doneText="确定" placeholder="未设置" displayFormat="YYYY年MM月DD日" [(ngModel)]="myDate"></ion-datetime>
+          <!-- <ion-select class="selectDate" [(ngModel)]="year">
+            <ion-option *ngFor="let item of items">{{item.year}}</ion-option>
+          </ion-select>
+          <span>年</span>
+          <ion-select class="selectDate" [(ngModel)]="year">
+            <ion-option *ngFor="let item of items">{{item.year}}</ion-option>
+          </ion-select>
+          <span>年</span>
+          <ion-select class="selectDate" [(ngModel)]="year">
+            <ion-option *ngFor="let item of items">{{item.year}}</ion-option>
+          </ion-select>
+          <span>年</span> -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-3>性别</ion-col>
+        <ion-col col-9 align='right'>
+          <ion-select class="sexSelect" [(ngModel)]="sexSelect" okText="确定" cancelText="取消">
+            <ion-option value="female">男</ion-option>
+            <ion-option value="male">女</ion-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-3>股龄</ion-col>
+        <ion-col col-9 align='right'>
+          <ion-select class="sexSelect" [(ngModel)]="guLingSelect" okText="确定" cancelText="取消">
+            <ion-option value="sharesTwo">股市小鲜肉</ion-option>
+            <ion-option value="sharesThree">股海精英</ion-option>
+            <ion-option value="sharesFour">股市大牛</ion-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-3>邮箱</ion-col>
+        <ion-col col-9 align='right'>
+          <ion-input type="text" value="" placeholder="未设置"></ion-input>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+    <div class="bottomBox clearfix">
+      <p>温馨提示：轻点对应项可修改内容 </p>
+      <p>灰色数据采集自账户中心不可修改</p>
+    </div>
+    <button class="zjzhButton" ion-button color="danger" round>资金账号解绑</button>
+  </div>
+
+</ion-content>

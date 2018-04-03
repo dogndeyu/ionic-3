@@ -1,0 +1,194 @@
+<ion-header class="homeHeader">
+  <ion-navbar color="navbarBgColr" id="homeHeader">
+    <ion-buttons start>
+      <div>
+        <ion-icon menuToggle name="menu" class="iconEtc"></ion-icon>
+      </div>
+    </ion-buttons>
+    <ion-title class="homeTitle">
+      <ion-segment [(ngModel)]="homeIndex">
+        <ion-segment-button class="zxTabContent" value="zxTabContent">
+          自选
+        </ion-segment-button>
+        <ion-segment-button class="hqTabContent" value="hqTabContent">
+          行情
+        </ion-segment-button>
+
+
+
+      </ion-segment>
+
+    </ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <div>
+        <ion-icon style="padding-left:5px;" class="iconSearch" ios="ios-search-outline" (click)="goGpSearch()"></ion-icon>
+      </div>
+
+
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content id="homeContent">
+  <div [ngSwitch]="homeIndex">
+    <ion-list id="zxTabContent" *ngSwitchCase="'zxTabContent'" class="clearfix zxTabContent">
+
+      <div class="row zxTabContent_row" id="zxTabContent_row">
+        <div *ngFor="let item of items" class="col col-33 exponential clearfix" (click)="myNavigation(item)">
+          <p class="f180 clearfix" align="center" [ngStyle]="{'color':item.price < '0' ? '#308460' : '#ec383e' }">{{item.price}}</p>
+          <p class="f140 clearfix" [ngStyle]="{'color':item.lv < '0' ? 'green' : 'red' }">
+            <span class="flt">
+              {{item.name}}
+            </span>
+            <span class="frt">{{item.lv}}</span>
+          </p>
+        </div>
+      </div>
+      <div id="wdzxContent" class="wdzxContent">
+        <ul class="clearfix">
+          <li class="clearfix">我的自选
+            <span></span>
+          </li>
+          <li class="clearfix">现价</li>
+          <li class="clearfix">涨跌幅</li>
+          <li class="clearfix">涨跌额</li>
+        </ul>
+
+      </div>
+      <div class="clearfix wozxFooter" style="background-color:#fff;">
+        <div *ngFor="let zfb of zfbs" class="wdzxListsCont">
+          <ion-item-sliding>
+            <ion-item no-lines class="homeList clearfix">
+              <ul class="clearfix">
+                <li>
+                  <p>{{zfb.name}}</p>
+                  <p>{{zfb.number}}</p>
+                </li>
+                <li>{{zfb.price}}</li>
+                <li>{{zfb.price}}</li>
+                <li>{{zfb.price}}</li>
+
+              </ul>
+            </ion-item>
+            <ion-item-options side="right">
+              <button ion-button danger>
+                删除
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+        </div>
+
+
+
+
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'hqTabContent'" style="background-color:#e0e0e0">
+      <div class="row zxTabContent_row positionRela clearfix">
+        <div *ngFor="let item of items" class="col col-33 exponential clearfix">
+          <p class="f180 clearfix" align="center" [ngStyle]="{'color':item.price < '0' ? '#308460' : '#ec383e' }">{{item.price}}</p>
+          <p class="f140 clearfix" [ngStyle]="{'color':item.lv < '0' ? 'green' : 'red' }">
+            <span class="flt">
+              {{item.name}}
+            </span>
+            <span class="frt">{{item.lv}}</span>
+          </p>
+        </div>
+      </div>
+      <div class="row zxTabContent_row positionRela clearfix">
+        <div *ngFor="let item of items" class="col col-33 exponential clearfix" (click)="myNavigation(item)">
+          <p class="f180 clearfix" align="center" [ngStyle]="{'color':item.price < '0' ? '#308460' : '#ec383e' }">{{item.price}}</p>
+          <p class="f140 clearfix" [ngStyle]="{'color':item.lv < '0' ? 'green' : 'red' }">
+            <span class="flt">
+              {{item.name}}
+            </span>
+            <span class="frt">{{item.lv}}</span>
+          </p>
+        </div>
+      </div>
+      <div class="hotPlates clearfix">
+        <p class="clearfix">
+          <span class="clearfix flt">热门行业板块</span>
+          <span class="clearfix frt">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </span>
+        </p>
+        <ul class="clearfix">
+          <li class="clearfix" *ngFor="let plate of plates" (click)="goMyZxgList()">
+            <p>{{plate.name}}</p>
+            <p>{{plate.price}}</p>
+            <p>{{plate.name}}</p>
+            <p>
+              <span>{{plate.price}}</span>
+              <span>{{plate.lv}}</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="hotPlates clearfix">
+        <p class="clearfix">
+          <span class="clearfix flt">热门概念模块</span>
+          <span class="clearfix frt">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </span>
+        </p>
+        <ul class="clearfix">
+          <li class="clearfix" *ngFor="let plate of plates">
+            <p>{{plate.name}}</p>
+            <p>{{plate.price}}</p>
+            <p>{{plate.name}}</p>
+            <p>
+              <span>{{plate.price}}</span>
+              <span>{{plate.lv}}</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix zfbBox">
+        <p class="clearfix">
+          <span class="clearfix flt">涨幅榜</span>
+          <span class="clearfix frt">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </span>
+        </p>
+        <ion-row *ngFor="let zfb of zfbs,let i = index" [ngClass]="{'text-danger': i==0}" (click)="goZsInformation()">
+          <ion-col col-4>
+            <p>{{zfb.name}}</p>
+            <p>{{zfb.number}}</p>
+          </ion-col>
+          <ion-col col-4>
+            <p align='center'>{{zfb.price}}</p>
+          </ion-col>
+          <ion-col col-4>
+            <p align='center'>{{zfb.zfPrice}}</p>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="clearfix dfbBox">
+        <p class="clearfix">
+          <span class="clearfix flt">跌幅榜</span>
+          <span class="clearfix frt">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </span>
+        </p>
+        <ion-row *ngFor="let zfb of zfbs,let i = index" [ngClass]="{'text-danger': i==0}" (click)="goZsInformation()">
+          <ion-col col-4>
+            <p>{{zfb.name}}</p>
+            <p>{{zfb.number}}</p>
+          </ion-col>
+          <ion-col col-4>
+            <p align='center'>{{zfb.price}}</p>
+          </ion-col>
+          <ion-col col-4>
+            <p align='center'>{{zfb.zfPrice}}</p>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-list>
+
+  </div>
+</ion-content>

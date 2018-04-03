@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>
+      个人中心
+    </ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="userFormFillContent">
+    <div class="userFormFillContentImg">
+      <img src="../../assets/img/1.png" alt="">
+      <div>123</div>
+    </div>
+
+    <div class="clearfix userFormFillList">
+      <ul class="clearfix">
+        <li class="clearfix">
+          <span>昵称</span>
+          <span>
+            <input type="text">
+          </span>
+        </li>
+        <li class="clearfix">
+          <span>手机号</span>
+          <span>
+            <input type="number">
+          </span>
+        </li>
+        <li class="clearfix">
+          <span>生日</span>
+          <span>
+            <ion-select [(ngModel)]="day">
+              <ion-option value="01">1</ion-option>
+              <ion-option value="02">2</ion-option>
+              <ion-option value="03">3</ion-option>
+              <ion-option value="04">4</ion-option>
+              <ion-option value="05">5</ion-option>
+              <ion-option value="06">6</ion-option>
+              <ion-option value="07">7</ion-option>
+              <ion-option value="08">8</ion-option>
+              <ion-option value="09">9</ion-option>
+              <ion-option value="10">10</ion-option>
+              <ion-option value="11">11</ion-option>
+              <ion-option value="12" checked="true">12</ion-option>
+            </ion-select>
+
+          </span>
+
+          <span>
+            <ion-select [(ngModel)]="month">
+              <ion-option value="01">1</ion-option>
+              <ion-option value="02">2</ion-option>
+              <ion-option value="03">3</ion-option>
+              <ion-option value="04">4</ion-option>
+              <ion-option value="05">5</ion-option>
+              <ion-option value="06">6</ion-option>
+              <ion-option value="07">7</ion-option>
+              <ion-option value="08">8</ion-option>
+              <ion-option value="09">9</ion-option>
+              <ion-option value="10">10</ion-option>
+              <ion-option value="11">11</ion-option>
+              <ion-option value="12" checked="true">12</ion-option>
+            </ion-select>
+
+          </span>
+
+          <span>
+            <ion-select [(ngModel)]="year">
+              <ion-option>1989</ion-option>
+              <ion-option>1990</ion-option>
+              <ion-option>1991</ion-option>
+              <ion-option>1992</ion-option>
+              <ion-option>1993</ion-option>
+              <ion-option checked="true">1994</ion-option>
+              <ion-option>1995</ion-option>
+              <ion-option>1996</ion-option>
+              <ion-option>1997</ion-option>
+              <ion-option>1998</ion-option>
+              <ion-option>1999</ion-option>
+            </ion-select>
+
+          </span>
+        </li>
+        <li class="clearfix">
+          <span>性别</span>
+          <span>
+            <ion-select [(ngModel)]="gender">
+              <ion-option value="f">女</ion-option>
+              <ion-option value="m">男</ion-option>
+            </ion-select>
+          </span>
+        </li>
+        <li class="clearfix">
+          <span>股龄</span>
+          <span>
+            <ion-select [(ngModel)]="sharesAge">
+              <ion-option value="none">未填写</ion-option>
+              <ion-option value="young">股市小鲜肉</ion-option>
+              <ion-option value="mid">股海精英</ion-option>
+              <ion-option value="ols">股市大牛</ion-option>
+            </ion-select>
+          </span>
+        </li>
+        <button class="userFormListFillbutton">提交确认修改</button>
+
+      </ul>
+    </div>
+  </div>
+</ion-content>

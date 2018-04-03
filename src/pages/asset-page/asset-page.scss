@@ -1,0 +1,650 @@
+page-asset-page {
+  // .scroll-content {
+  //   border-top: 1px solid #e0e0e0;
+  // }
+  .toolbar-background-ios {
+    background-color: #E32C35!important;
+  }
+  .toolbar-title-ios {
+    color: #fff!important;
+  }
+  .zcedCont ul li {
+    width: 33.3%;
+    float: left;
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+    border-right: 1px solid #f4f4f4;
+  }
+  .zcedCont ul li:nth-child(3) {
+    border-right: none;
+  }
+  .zcedCont ul li p:nth-child(1) {
+    height: 30px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    color: #999;
+  }
+  .zcedCont ul li p:nth-child(2) {
+    height: 25px;
+    font-size: 1.5rem;
+    color: #0e0e0e;
+  }
+  .zcedCont ul {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .zcCanvasCont {
+    background-color: #f0f0f0;
+  }
+  .zcCanvasLeft {
+    width: 50%;
+    float: left
+  }
+  #picturePlace {
+    width: 100%;
+  }
+  .zcCanvasRight {
+    width: 50%;
+    float: left;
+  }
+  .zcCanvasRight ul li {
+    list-style: none;
+    height: 30px;
+    width: 95%;
+    margin-top: 6px;
+  }
+  .zcCanvasRight ul li:first-child {
+    margin-top: 16px;
+  }
+  .canvasLogo {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    float: left;
+  }
+  .rightJdt {
+    width: 75%;
+    height: 16px;
+    background-color: #E0E0E0;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .prizeContSvg div {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+  }
+  .prizeTxtContentDiv {
+    width: 33.33%;
+    height: 30px;
+    float: left;
+  }
+  .prizeTxtConten_o {
+    width: 80%;
+    height: 30px;
+    background-color: #ecce85;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 0 auto
+  }
+  .prizeTxtConten_t {
+    width: 90%;
+    height: 20px;
+    background-color: #e9873e;
+    margin: 0 auto;
+    border-radius: 7px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 20px;
+  }
+  .prizeTxtContentDiv:nth-child(2) .prizeTxtConten_o {
+    background-color: #d4d6e0;
+  }
+  .prizeTxtContentDiv:nth-child(2) .prizeTxtConten_t {
+    background-color: #c1c4d6;
+  }
+  .prizeTxtContentDiv:nth-child(3) .prizeTxtConten_o {
+    background-color: #d1a99e;
+  }
+  .prizeTxtContentDiv:nth-child(3) .prizeTxtConten_t {
+    background-color: #bd7a68;
+  }
+  .paimingCont div {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    color: #999;
+    font-size: 1.15rem;
+    margin-top: 5px;
+  }
+  .prizeTxtConten_t .jdContent {
+    position: absolute;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+  }
+  .jdNumber {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 1.3rem;
+  }
+  .jdname {
+    position: absolute;
+    top: -17px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  .zcCanvasRight ul li:first-child .jdContent,
+  .zcCanvasRight ul li:first-child .canvasLogo {
+    background-color: #EC4317;
+  }
+  .zcCanvasRight ul li:nth-child(2) .jdContent,
+  .zcCanvasRight ul li:nth-child(2) .canvasLogo {
+    background-color: #FF9743;
+  }
+  .zcCanvasRight ul li:nth-child(3) .jdContent,
+  .zcCanvasRight ul li:nth-child(3) .canvasLogo {
+    background-color: #4093E6;
+  }
+  .zcCanvasRight ul li:nth-child(4) .jdContent,
+  .zcCanvasRight ul li:nth-child(4) .canvasLogo {
+    background-color: #FDD94A;
+  }
+  .zc360Instro {
+    font-size: 1.3rem;
+    padding: 15px 10px;
+    background-color: #f0f0f0;
+    color: #bbb;
+  }
+  .zc360PmContent ul {
+    margin: 0 10px;
+    border-top: 1px solid #e0e0e0;
+  }
+  .zc360PmContent {
+    padding: 10px 15px 10px;
+    min-height: 100px;
+    background-color: #f0f0f0;
+  }
+  .zc360PmContent ul li {
+    list-style: none;
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .zc360PmContent ul li:first-child {
+    margin-top: 30px;
+  }
+  .zc360PmContent ul li .zc360PmLogo {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    float: left;
+    background-color: #4093E6;
+  }
+  .zc360PerentCont {
+    width: 84%;
+    height: 16px;
+    background-color: #e0e0e0;
+    margin-top: 4px;
+    float: left;
+    margin-left: 10px;
+    border-radius: 5px;
+    position: relative
+  }
+  .zc360PerentLv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4093E6;
+    height: 16px;
+    width: 130px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .zc360PerentNumber {
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    color: #333;
+    font-size: 1.3rem;
+  }
+  .zc360PerentName {
+    position: absolute;
+    left: 10px;
+    top: -20px;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  .zc360PmContent ul li:nth-child(2) .zc360PerentLv,
+  .zc360PmContent ul li:nth-child(2) .zc360PmLogo {
+    background-color: #2667A8;
+  }
+  .zc360PmContent ul li:nth-child(3) .zc360PerentLv,
+  .zc360PmContent ul li:nth-child(3) .zc360PmLogo {
+    background-color: #013D79;
+  }
+  .prizeContent {
+    padding: 20px 10px;
+    min-height: 100px;
+    background-color: #f0f0f0;
+  }
+  .prizeContent {
+    position: relative;
+  } // .prizeContent img {
+  //   width: 100%;
+  // }
+  .prizeContent p:first-child {
+    position: absolute;
+    bottom: 29%;
+    font-size: 1.2rem;
+    color: #fff;
+    left: 9%;
+  }
+  .prizeContent p:nth-child(2) {
+    position: absolute;
+    bottom: 29%;
+    left: 42%;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  .prizeContent p:nth-child(3) {
+    position: absolute;
+    bottom: 29%;
+    left: 76%;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  .prizeContent p:nth-child(4) {
+    position: absolute;
+    bottom: 20px;
+    left: 7%;
+    font-size: 1rem;
+    color: #999;
+  }
+  .prizeContent p:nth-child(5) {
+    position: absolute;
+    bottom: 20px;
+    left: 39%;
+    font-size: 1rem;
+    color: #999;
+  }
+  .prizeContent p:nth-child(6) {
+    position: absolute;
+    bottom: 20px;
+    left: 77%;
+    font-size: 1rem;
+    color: #999;
+  }
+  .namesContent {
+    background-color: #f0f0f0;
+    padding: 20px 0 0px;
+  }
+  .namesDiv {
+    border-top: 1px solid #e0e0e0;
+    margin: 0 10px;
+  }
+  .namesDiv>div:first-child {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .namesChCont {
+    margin-top: 10px;
+    color: #013D79;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  .namesPmCont {
+    text-align: center;
+    color: #999;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  .chCanvasContent {
+    background-color: #f0f0f0;
+  }
+  .chCanvasDiv {
+    padding: 0 20px;
+  }
+  .dtrsCont span {
+    color: #f05763;
+  }
+  .cxzlCont span {
+    color: #f05763;
+  }
+  .lyxcCont span {
+    color: #f05763;
+  }
+  .lhcqCont span {
+    color: #f05763;
+  }
+  .rhgtCont span {
+    color: #f05763;
+  }
+  .dtrsCont,
+  .cxzlCont,
+  .lyxcCont,
+  .lhcqCont,
+  .rhgtCont {
+    position: absolute;
+    z-index: 6666;
+    font-size: 12px;
+    color: #878787;
+  }
+  @media screen and (min-width: 301px) and (max-width: 325px) {
+    .dtrsCont {
+      right: 1%;
+      top: 39%;
+    }
+    .cxzlCont {
+      right: 3%;
+      top: 68%;
+    }
+    .lyxcCont {
+      right: 35%;
+      top: 85%;
+    }
+    .lhcqCont {
+      left: 3%;
+      top: 68%;
+    }
+    .rhgtCont {
+      left: 3%;
+      top: 39%;
+    }
+  }
+  @media screen and (min-width: 326px) and (max-width: 350px) {
+    .dtrsCont {
+      right: 5.5%;
+      top: 40%;
+    }
+    .cxzlCont {
+      right: 7%;
+      top: 66%;
+    }
+    .lyxcCont {
+      right: 35%;
+      top: 82%;
+    }
+    .lhcqCont {
+      left: 5.5%;
+      top: 66%;
+    }
+    .rhgtCont {
+      left: 5.5%;
+      top: 40%;
+    }
+  }
+  @media screen and (min-width: 351px) and (max-width: 375px) {
+    .dtrsCont {
+      right: 7.5%;
+      top: 41%;
+    }
+    .cxzlCont {
+      right: 9%;
+      top: 65%;
+    }
+    .lyxcCont {
+      right: 35%;
+      top: 79%;
+    }
+    .lhcqCont {
+      left: 8%;
+      top: 65%;
+    }
+    .rhgtCont {
+      left: 8%;
+      top: 41%;
+    }
+  }
+  @media screen and (min-width: 376px) and (max-width: 400px) {
+    .dtrsCont {
+      right: 9%;
+      top: 41%;
+    }
+    .cxzlCont {
+      right: 10%;
+      top: 64%;
+    }
+    .lyxcCont {
+      right: 35%;
+      top: 77%;
+    }
+    .lhcqCont {
+      left: 9%;
+      top: 64%;
+    }
+    .rhgtCont {
+      left: 9%;
+      top: 41%;
+    }
+  }
+  @media screen and (min-width: 401px) and (max-width: 425px) {
+    .dtrsCont {
+      right: 12%;
+      top: 42%;
+    }
+    .cxzlCont {
+      right: 13.5%;
+      top: 64%;
+    }
+    .lyxcCont {
+      right: 35%;
+      top: 78%;
+    }
+    .lhcqCont {
+      left: 12%;
+      top: 64%;
+    }
+    .rhgtCont {
+      left: 12%;
+      top: 42%;
+    }
+  }
+  @media screen and (min-width: 426px) and (max-width: 450px) {
+    .dtrsCont {
+      right: 14%;
+      top: 42%;
+    }
+    .cxzlCont {
+      right: 15.5%;
+      top: 63%;
+    }
+    .lyxcCont {
+      right: 37%;
+      top: 74%;
+    }
+    .lhcqCont {
+      left: 14%;
+      top: 63%;
+    }
+    .rhgtCont {
+      left: 14%;
+      top: 42%;
+    }
+  }
+  @media screen and (min-width: 451px) and (max-width: 475px) {
+    .dtrsCont {
+      right: 16%;
+      top: 42.5%;
+    }
+    .cxzlCont {
+      right: 17.5%;
+      top: 62%;
+    }
+    .lyxcCont {
+      right: 38%;
+      top: 74%;
+    }
+    .lhcqCont {
+      left: 16%;
+      top: 62%;
+    }
+    .rhgtCont {
+      left: 16%;
+      top: 42.5%;
+    }
+  }
+  @media screen and (min-width: 476px) and (max-width: 500px) {
+    .dtrsCont {
+      right: 17%;
+      top: 43%;
+    }
+    .cxzlCont {
+      right: 18%;
+      top: 62%;
+    }
+    .lyxcCont {
+      right: 38%;
+      top: 74%;
+    }
+    .lhcqCont {
+      left: 17%;
+      top: 62%;
+    }
+    .rhgtCont {
+      left: 17%;
+      top: 43%;
+    }
+  }
+  @media screen and (min-width: 501px) and (max-width: 525px) {
+    .dtrsCont {
+      right: 19.5%;
+      top: 44%;
+    }
+    .cxzlCont {
+      right: 20.5%;
+      top: 60.5%;
+    }
+    .lyxcCont {
+      right: 40%;
+      top: 70%;
+    }
+    .lhcqCont {
+      left: 19.5%;
+      top: 60.5%;
+    }
+    .rhgtCont {
+      left: 19.5%;
+      top: 44%;
+    }
+  }
+  @media screen and (min-width: 526px) and (max-width: 550px) {
+    .dtrsCont {
+      right: 19.5%;
+      top: 44%;
+    }
+    .cxzlCont {
+      right: 20.5%;
+      top: 60.5%;
+    }
+    .lyxcCont {
+      right: 40%;
+      top: 70%;
+    }
+    .lhcqCont {
+      left: 19.5%;
+      top: 60.5%;
+    }
+    .rhgtCont {
+      left: 19.5%;
+      top: 44%;
+    }
+  }
+  @media screen and (min-width: 551px) and (max-width: 575px) {
+    .dtrsCont {
+      right: 19.5%;
+      top: 44%;
+    }
+    .cxzlCont {
+      right: 20.5%;
+      top: 60.5%;
+    }
+    .lyxcCont {
+      right: 40%;
+      top: 70%;
+    }
+    .lhcqCont {
+      left: 19.5%;
+      top: 60.5%;
+    }
+    .rhgtCont {
+      left: 19.5%;
+      top: 44%;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 600px) {
+    .dtrsCont {
+      right: 23%;
+      top: 44%;
+    }
+    .cxzlCont {
+      right: 23.5%;
+      top: 59%;
+    }
+    .lyxcCont {
+      right: 40%;
+      top: 68%;
+    }
+    .lhcqCont {
+      left: 23%;
+      top: 59%;
+    }
+    .rhgtCont {
+      left: 23%;
+      top: 44%;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 800px) {
+    .dtrsCont {
+      right: 23.5%;
+      top: 44.5%;
+    }
+    .cxzlCont {
+      right: 24%;
+      top: 59%;
+    }
+    .lyxcCont {
+      right: 42%;
+      top: 68%;
+    }
+    .lhcqCont {
+      left: 23.5%;
+      top: 59%;
+    }
+    .rhgtCont {
+      left: 23.5%;
+      top: 44.5%;
+    }
+  }
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
+    .dtrsCont {
+      right: 23.5%;
+      top: 44.5%;
+    }
+    .cxzlCont {
+      right: 24%;
+      top: 59%;
+    }
+    .lyxcCont {
+      right: 42%;
+      top: 68%;
+    }
+    .lhcqCont {
+      left: 23.5%;
+      top: 59%;
+    }
+    .rhgtCont {
+      left: 23.5%;
+      top: 44.5%;
+    }
+  }
+}

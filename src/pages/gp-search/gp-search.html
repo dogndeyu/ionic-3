@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <div class="clearfix inputBox">
+        <ion-icon name="search" ios="ios-search-outline"></ion-icon>
+        <ion-input (focus)="focusInput()" (blur)='blurInput()' placeholder="请输入证券代码/拼音首字母/中文名称..." class="SearchInput" type="text"></ion-input>
+      </div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+
+  <div class="clearfix">
+    <div class="clearfix searchTitleBox">
+      <ion-segment class="clearfix" [(ngModel)]="SearchContent" (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="resultCont" class="clearfix">
+          搜索结果
+
+        </ion-segment-button>
+        <ion-segment-button value="historyCont" class="clearfix">
+          搜索历史
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    <div class="clearfix">
+      <div [ngSwitch]="SearchContent">
+        <ion-list *ngSwitchCase="'resultCont'" class="ionList">
+          <div class="triangle1">
+
+          </div>
+          <ion-item *ngFor="let item of items; index as i">
+            <div class="clearfix flt historyContType">沪</div>
+            <div class="clearfix flt historyContName">{{item.name}}</div>
+            <div class="clearfix flt historyContNumber">{{item.number}}</div>
+            <div class="clearfix frt">
+              <img (click)='changeFuHao(item,i)' [src]="item.src">
+            </div>
+          </ion-item>
+        </ion-list>
+        <ion-list *ngSwitchCase="'historyCont'" class="ionList">
+          <div class="triangle2">
+          </div>
+          <ion-item *ngFor="let item of items; index as i">
+            <div class="clearfix flt historyContType">沪</div>
+            <div class="clearfix flt historyContName">{{item.name}}</div>
+            <div class="clearfix flt historyContNumber">{{item.number}}</div>
+            <div class="clearfix frt">
+              <img (click)='changeFuHao(item,i)' [src]="item.src">
+            </div>
+          </ion-item>
+
+
+        </ion-list>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,88 @@
+<ion-header class="borderBotNone">
+  <ion-navbar>
+    <ion-title>
+      我的提醒
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="xxtxContDiv clearfix">
+
+  <p class="ggTipsCont clearfix">
+    关注用户可用提醒功能
+    <span class="openToggleTips">(红色开关为提醒打开状态)</span>
+  </p>
+  <div class="clearfix ggTipsLists">
+    <ul class="clearfix">
+      <!--" -->
+      <li class="clearfix" *ngFor="let item of items">
+        <ion-item>
+          <ion-label> {{item.name}}</ion-label>
+          <ion-label>
+            <ion-icon name="ios-help-circle-outline" class="ionIconStyle"></ion-icon>
+          </ion-label>
+
+          <ion-toggle color="danger" checked="item.open"></ion-toggle>
+        </ion-item>
+      </li>
+    </ul>
+  </div>
+  <p class="ggTipsCont clearfix">
+    资金账号绑定用户可用提醒功能
+  </p>
+  <div class="clearfix zhbdTipsLists">
+
+    <ul class="clearfix">
+      <li class="clearfix" *ngFor="let pack of packs">
+        <ion-item no-lines>
+          <ion-label> {{pack.name}}</ion-label>
+          <ion-label>
+            <ion-icon name="ios-help-circle-outline" class="ionIconStyle"></ion-icon>
+          </ion-label>
+          <ion-toggle color="danger" [(ngModel)]="pack.open"></ion-toggle>
+        </ion-item>
+      </li>
+    </ul>
+    <ul class="clearfix">
+      <li class="clearfix rzrqLi">
+        <ion-item>
+          <ion-label> 融资融券业务提醒</ion-label>
+          <ion-label>
+            <ion-icon name="ios-help-circle-outline" class="ionIconStyle"></ion-icon>
+          </ion-label>
+          <ion-toggle color="danger" (ionChange)="pwshow=!pwshow"></ion-toggle>
+        </ion-item>
+
+
+        <div class="rzrqDisBox clearfix" [ngClass]="pwshow?'eyeshow':'eyehide'">
+          <div class="tag clearfix">
+            <em></em>
+            <span></span>
+          </div>
+          <ion-item no-lines>
+            <ion-label>融资融券担保比例提醒</ion-label>
+            <ion-checkbox color="danger" checked="true"></ion-checkbox>
+          </ion-item>
+
+          <ion-item no-lines>
+            <ion-label>双融合约到期提醒</ion-label>
+            <ion-checkbox color="danger" checked="true"></ion-checkbox>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label>双融账户持股集中度比例提醒</ion-label>
+            <ion-checkbox color="danger" checked="true"></ion-checkbox>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label>双融买卖比例提醒</ion-label>
+            <ion-checkbox color="danger" checked="true"></ion-checkbox>
+          </ion-item>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="remind-tips">
+    点击推送类型旁的“?”可查看服务具体内容(所有服务功能均免费) 免责声明：以上服务由国元证券官方微信免费提供，提醒服务通过微信形式发送至定制客户微信。国元证券将会尽最大努力使客户能够及时收到微信内容，但不排除由于不可抗力（包括洪水、地震及其它自然灾
+    害、战争、骚乱、火灾、政府征用、没收、法律变化、突发停电或其它突发事件、银行清算系统故障、证券交易所非正常暂停或停止交易等），或者第三方（运营商）通信网络出现故障造成的产品（服务）延误或丢失等其他国元证券无法控制的原因，导致客户未能及时或者未收到定制微信服务，或者微信内容乱码、断缺、内容表意不清、不完整等情况。客户需自行承担由此可能产生的损失和风险，国元证券将不承担任何责任。客户在发现微信内容缺失或微信接收不正常时请直接在微信反映或拨打95578热线。
+  </div>
+</ion-content>

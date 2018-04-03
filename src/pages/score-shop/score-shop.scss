@@ -1,0 +1,136 @@
+page-score-shop {
+  .scoreContent {
+    background-color: #e0e0e0;
+  }
+  .toolbar-background-ios {
+    background-color: #E32C35!important;
+  }
+  .toolbar-title-ios {
+    color: #fff!important;
+  }
+  .item:nth-child(1) {
+    margin-top: 0;
+  } // .scroll-content {
+  //   border-top: 1px solid #e0e0e0;
+  // }
+  .scoreLogoCont img {
+    width: 48px;
+    height: 49px;
+    border-radius: 50%;
+  }
+  .scoreInstro {
+    font-size: 1.4rem;
+    color: #262626;
+    margin-left: 10px;
+  }
+  .scoreName {
+    margin-top: 2px;
+  }
+  .scoreName span {
+    font-size: 1.7rem;
+  }
+  .scoreMember {
+    color: #333;
+    margin-top: 2px;
+  }
+  .scoreMember span img {
+    width: 20px;
+  }
+  .scoreMember span {
+    float: left;
+  }
+  .scoreMember span:nth-child(2) {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    margin-top: 2px;
+  }
+  .scoreSign div:nth-child(1) {
+    width: 74px;
+    height: 25px;
+    background-color: #E32C35;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    line-height: 25px;
+  }
+  .scoreSign div:nth-child(2) {
+    font-size: 1.4rem;
+    margin-top: 2px;
+  }
+  .scoreSign div:nth-child(2) span:nth-child(1) {
+    font-size: 1.5rem;
+    color: #262626;
+  }
+  .scoreSign div:nth-child(2) span:nth-child(2) {
+    font-size: 1.2rem;
+    color: #858585;
+  }
+  .scoreService {
+    background-color: #fff;
+    margin: 10px 0;
+  }
+  .scoreService ul li {
+    list-style: none;
+    float: left;
+    width: 33.3%;
+    border-right: 1px solid #5F86AD;
+    height: 40px;
+    margin: 17px 0;
+    text-align: center;
+    color: #333;
+    font-size: 1.2rem;
+  } // .scoreService ul li p
+  .scoreService ul li:nth-child(3) {
+    border: none;
+  }
+  .scoreActive_qLogo {
+    margin-left: 15px;
+    display: block;
+    float: left;
+  }
+  .scoreActive_qLogo img {
+    display: block;
+    margin: 11px 6px 0 0;
+  }
+  .scoreActive {
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  .scoreActive>p {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.3rem;
+    color: #013D79;
+  }
+  .scoreActive ul li {
+    width: 33.3%;
+    list-style: none;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0
+  }
+  .scoreActive ul li:nth-child(3n) {
+    border-right: none;
+  }
+  .scoreActive ul li img {
+    width: 70%;
+    margin: 10px 0 3px;
+  }
+  .activeName {
+    color: #333333;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 15%;
+  }
+  .activeYb {
+    color: #0A2A6A;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 15%;
+    margin-bottom: 5px;
+    margin-top: 1px;
+  }
+}

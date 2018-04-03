@@ -1,0 +1,256 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>
+      普通账户买入
+      <span style="position:relative">
+          <ion-icon ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+          <ion-icon style="position:absolute; top:7px; left:0" ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        </span>
+
+    </ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="ptzhmrContent">
+  <div class="fund-deal clearfix">
+    <div class="livePrice flt clearfix">
+      0.00%
+    </div>
+    <div class="upAndDown flt clearfix">
+      <p>跌停--</p>
+      <p>涨停--</p>
+    </div>
+  </div>
+  <ion-segment class="ptzhmmTab" [(ngModel)]="pet">
+    <ion-segment-button class="wd" value="wd_cont">
+      五档
+    </ion-segment-button>
+    <ion-segment-button class="fs" value="fs_cont">
+      分时
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="zfbk_tabContent" [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'wd_cont'">
+      <div class="clearfix">
+        <div class="flt clearfix fund-row">
+          <ion-row>
+            <ion-col col-4>卖五</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖四</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖三</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖二</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖一</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+
+        </div>
+        <div class="flt clearfix fund-row">
+          <ion-row>
+            <ion-col col-4>卖五</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖四</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖三</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖二</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖一</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+        </div>
+      </div>
+      <div class="ptzhFooter clearfix">
+        <div class="gdzhCont clearfix">
+          <div class="clearfix">股东账号</div>
+          <div class="clearfix toggleCont">
+            <span class="clearfix">--</span>
+            <span class="clearfix"> <ion-toggle ></ion-toggle> </span>
+          </div>
+        </div>
+        <div class="gdzhCont clearfix">
+          <div class="clearfix">股票代码</div>
+          <div class="clearfix gdzhContInput">
+            <input type="text" placeholder="请输入股票代码">
+          </div>
+        </div>
+        <div class="gdzhCont clearfix">
+          <div class="clearfix">股票代码</div>
+          <div class="clearfix gdzhContInput">
+            <input type="text" placeholder="买入价格">
+            <span class="reFreshIcon">
+                <ion-icon name="refresh"></ion-icon>
+            </span>
+          </div>
+          <div class="clearfix minusBtn">-</div>
+          <div class="clearfix addBtn">+</div>
+        </div>
+        <div class="gdzhCont clearfix">
+          <div class="clearfix">股票代码</div>
+          <div class="clearfix gdzhContInput">
+            <input type="text" placeholder="输入购买股数">
+          </div>
+          <div class="clearfix minusBtn">-</div>
+          <div class="clearfix addBtn">+</div>
+        </div>
+        <p class="priceUse">当前可买0股 可用资金0.00</p>
+        <button class="ptzhdxBtn" ion-button color="danger" round>买入</button>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'fs_cont'">
+      <div class="clearfix">
+        <div class="flt clearfix fund-row">
+          <ion-row>
+            <ion-col col-4>卖五</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖四</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖三</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖二</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖一</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+
+        </div>
+        <div class="flt clearfix fund-row">
+          <ion-row>
+            <ion-col col-4>卖五</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖四</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖三</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖二</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4>卖一</ion-col>
+            <ion-col col-4>- -</ion-col>
+            <ion-col col-4 algin='right'>- -万</ion-col>
+          </ion-row>
+        </div>
+      </div>
+      <div class="ptzhFooter clearfix">
+        <div class="gdzhCont clearfix">
+          <div class="clearfix">股东账号</div>
+          <div class="clearfix toggleCont">
+            <span class="clearfix">--</span>
+            <span class="clearfix"> <ion-toggle ></ion-toggle> </span>
+          </div>
+        </div>
+        <div class="gdzhCont clearfix">
+          <div class="clearfix">股票代码</div>
+          <div class="clearfix gdzhContInput">
+            <input type="text" placeholder="请输入股票代码">
+          </div>
+        </div>
+        <div class="gdzhCont clearfix">
+          <div class="clearfix">股票代码</div>
+          <div class="clearfix gdzhContInput">
+            <input type="text" placeholder="买入价格">
+            <span class="reFreshIcon">
+                <ion-icon name="refresh"></ion-icon>
+            </span>
+          </div>
+          <div class="clearfix minusBtn">-</div>
+          <div class="clearfix addBtn">+</div>
+        </div>
+        <div class="gdzhCont clearfix">
+          <div class="clearfix">股票代码</div>
+          <div class="clearfix gdzhContInput">
+            <input type="text" placeholder="输入购买股数">
+          </div>
+          <div class="clearfix minusBtn">-</div>
+          <div class="clearfix addBtn">+</div>
+        </div>
+        <p class="priceUse">当前可买0股 可用资金0.00</p>
+        <button class="ptzhdxBtn" ion-button color="danger" round>买入</button>
+      </div>
+    </ion-list>
+
+  </div>
+  <div class="footer-menu clearfix">
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-search" md="ios-search-outline"></ion-icon>
+      </p>
+      <p>我要打新</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon name="trending-up"></ion-icon>
+      </p>
+      <p>新股申购</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-reorder" md="md-reorder"></ion-icon>
+      </p>
+      <p>申购查询</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon>
+      </p>
+      <p>新股日历</p>
+    </div>
+  </div>
+</ion-content>

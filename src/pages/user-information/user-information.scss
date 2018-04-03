@@ -1,0 +1,96 @@
+page-user-information {
+  .toolbar-background-ios {
+    background-color: #E32C35!important;
+  }
+  .toolbar-title-ios {
+    color: #fff!important;
+  }
+  .userInfo {
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#748499), color-stop(#8e98a9), color-stop(#9ea2ae), color-stop(#aba9ae), color-stop(#ada1a1), color-stop(#95898b), to(#897e84));
+    background: linear-gradient(#748499, #8e98a9, #9ea2ae, #aba9ae, #ada1a1, #95898b, rgb(170, 147, 172));
+  }
+  .userInfoCont {
+    margin: 60px 30px 0;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 20px 20px;
+  }
+  ion-row {
+    border-bottom: 1px solid #f5f5f5;
+    margin-top: 10px;
+  }
+  ion-row:first-child {
+    margin-top: 0;
+  }
+  ion-row ion-col:first-child {
+    color: #555555;
+    font-size: 1.3rem;
+  }
+  ion-input input {
+    text-align: right;
+    margin: 0 !important;
+    color: #000;
+  }
+  .selectDate {
+    padding: 0 2px 0 0;
+    max-width: auto;
+    max-width: 50%;
+  }
+  .sexSelect {
+    max-width: 100%;
+    padding: 0 2px 0 0;
+  }
+  .ionRowtDate .select-icon {
+    position: absolute;
+  }
+  .selectDate .select-icon {
+    right: -10px !important;
+  }
+  .selectDate {
+    display: inline-flex;
+  }
+  .datetime-ios {
+    padding: 0 2px 0 0;
+  }
+  .userInfoCont {
+    position: relative;
+  }
+  .headPicture {
+    position: absolute;
+    width: 26%;
+    border-radius: 100%;
+    background: #fff;
+    padding: 4px;
+    left: 37%;
+    box-shadow: 3px 3px 10px #888888;
+  }
+  .headPicture img {
+    border-radius: 100%;
+  }
+  .bottomBox {
+    text-align: center;
+    color: #bbb;
+    bottom: 10px;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+  }
+  .bottomBox p {
+    line-height: 20px;
+    font-size: 1.2rem
+  }
+  .zjzhButton {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    border-radius: 8px;
+    bottom: -20%;
+    background-color: transparent;
+    border: 1px solid rgba(230, 110, 114, 1)
+  }
+}

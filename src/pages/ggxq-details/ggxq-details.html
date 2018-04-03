@@ -1,0 +1,132 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>个股详情</ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconSearch" ios="ios-search-outline"></ion-icon>
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="ggxqContent clearfix">
+    <p class="ggxqTips clearfix">
+      <span class="flt">{{gpName}}</span>
+      <span class="frt">{{gpPrice}}</span>
+    </p>
+    <div class="ggxqZfContent clearfix">
+      <div class="flt clearfix">
+        100112
+      </div>
+      <div class="frt clearfix">
+        <p class="clearfix"><span class="flt"> {{gpZf}}</span> <span class="frt"> <ion-icon ios="md-arrow-up" md="md-arrow-up"></ion-icon></span></p>
+        <div class="clearfix">{{gpLv}}</div>
+      </div>
+    </div>
+  </div>
+  <ion-toolbar no-border-top>
+    <ion-segment style="background-color:#fff;width:90%;margin:0 auto;" [(ngModel)]="pet">
+      <ion-segment-button class="zfPlatesTab" value="fenshi">
+        分时
+      </ion-segment-button>
+      <ion-segment-button class="zfPlatesTab" value="ri_k">
+        日K
+      </ion-segment-button>
+      <ion-segment-button class="zfPlatesTab" value="zhou_k">
+        周K
+      </ion-segment-button>
+      <ion-segment-button class="zfPlatesTab" value="yue_k">
+        月K
+      </ion-segment-button>
+    </ion-segment>
+
+  </ion-toolbar>
+  <div style="width:100%;height:34px;">
+    <div class="xskx_btn">
+      相似k线
+    </div>
+  </div>
+
+
+  <div class="ggxq_tabContent clearfix" [ngSwitch]="pet">
+
+    <ion-list *ngSwitchCase="'fenshi'">
+      11
+    </ion-list>
+    <ion-list *ngSwitchCase="'ri_k'">
+      22
+    </ion-list>
+    <ion-list *ngSwitchCase="'zhou_k'">
+      33
+    </ion-list>
+    <ion-list *ngSwitchCase="'yue_k'">
+      44
+    </ion-list>
+
+
+  </div>
+  <ion-toolbar no-border-top>
+    <ion-segment style="background-color:#fff;width:90%;margin:0 auto;" [(ngModel)]="pet2">
+      <ion-segment-button class="zfPlatesTab" value="ggzxCont">
+        个股资讯
+      </ion-segment-button>
+      <ion-segment-button class="zfPlatesTab" value="f10">
+        F10
+      </ion-segment-button>
+      <ion-segment-button class="zfPlatesTab" value="ggdpCont">
+        个股点评
+      </ion-segment-button>
+    </ion-segment>
+
+  </ion-toolbar>
+  <div class="ggxq_tabBot2 clearfix" [ngSwitch]="pet2">
+
+    <ion-list *ngSwitchCase="'ggzxCont'" class="ggziList">
+      <ul>
+        <li *ngFor="let item of items">
+          <p>{{item.titles}}</p>
+          <p>{{item.times}}</p>
+        </li>
+      </ul>
+    </ion-list>
+    <ion-list *ngSwitchCase="'f10'">
+      <div class="f10Cont clearfix">
+        <div class="litleBorder flt clearfix"></div>
+        <div class="litleCont flt clearfix">股票关联图</div>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'ggdpCont'">
+      33
+    </ion-list>
+
+    <div class="footer-menu clearfix">
+      <div class="menuContent clearfix">
+        <p>
+          <ion-icon ios="ios-card" md="md-card"></ion-icon>
+        </p>
+        <p>买入</p>
+      </div>
+      <div class="menuContent clearfix">
+        <p>
+          <ion-icon name="trending-up"></ion-icon>
+        </p>
+        <p>卖出</p>
+      </div>
+      <div class="menuContent clearfix">
+        <p>
+          <ion-icon ios="ios-chatboxes-outline" md="ios-chatboxes-outline"></ion-icon>
+        </p>
+        <p>取消自选</p>
+      </div>
+      <div class="menuContent clearfix">
+        <p>
+          <ion-icon ios="ios-cart-outline" md="ios-cart-outline "></ion-icon>
+        </p>
+        <p>涨价提醒</p>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

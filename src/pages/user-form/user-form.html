@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>
+      个人中心
+
+
+    </ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+  <div class="userFormContent">
+    <div class="userFormContentImg">
+      <img src="" alt="">
+    </div>
+
+    <div class="clearfix userFormList">
+      <ul class="clearfix">
+        <li class="clearfix">
+          <span>昵称</span>
+          <span>董</span>
+        </li>
+        <li class="clearfix">
+          <span>手机号</span>
+          <span>12345678911</span>
+        </li>
+        <li class="clearfix">
+          <span>生日</span>
+          <span>1993-04-12</span>
+        </li>
+        <li class="clearfix">
+          <span>性别</span>
+          <span>男</span>
+        </li>
+        <li class="clearfix">
+          <span>股龄</span>
+          <span>股市小鲜肉(<1年)</span>
+        </li>
+        <button (click)="goUserFormFill()" class="userFormListbutton">点击修改</button>
+
+      </ul>
+    </div>
+  </div>
+</ion-content>

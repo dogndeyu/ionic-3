@@ -1,0 +1,137 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>
+      普通申购查询
+      <span style="position:relative">
+          <ion-icon ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+          <ion-icon style="position:absolute; top:7px; left:0" ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        </span>
+
+    </ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-segment class="zxContent" [(ngModel)]="pet">
+    <ion-segment-button class="zxTab" value="wdph_cont">
+      我的配号
+    </ion-segment-button>
+    <ion-segment-button class="zxTab" value="wdzq_cont">
+      我的中签
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="" [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'wdph_cont'">
+      <div class="wdph_cont_title clearfix">
+        <div class="flt clearfix">
+          <span><ion-icon ios="ios-time-outline" md="ios-time-outline"></ion-icon></span>
+          <span>起始时间</span>
+        </div>
+        <div class="flt clearfix">
+          <span><ion-icon ios="ios-time-outline" md="ios-time-outline"></ion-icon></span>
+          <span>截止时间</span>
+        </div>
+      </div>
+      <div class="wdph_cont_cont clearfix">
+        <div class="flt clearfix">
+          <span>起始时间</span>
+          <span><ion-icon name="arrow-forward"></ion-icon></span>
+        </div>
+        <div class="frt clearfix">
+          <span>起始时间</span>
+          <span><ion-icon name="arrow-forward"></ion-icon></span>
+        </div>
+      </div>
+      <div class="clearfix ptsgLists">
+        <ul class="clearfix">
+          <li  class="clearfix">
+            <div class="clearfix ptsgLists_title">
+              <span>理药配合</span>
+              <span>736963</span>
+              <span class="frt">2017/09/12</span>
+            </div>
+            <div class="clearfix ptsgLists_cont">
+              <div class="row">
+                <div class="col col-33">
+                  <p class="f140" align="left">A43364179</p>
+                  <p class="f140" align="left">股东账户</p>
+                </div>
+                <div class="col col-33">
+                  <p class="f140" align="right">100026720663</p>
+                  <p class="f140" align="right">起始配号</p>
+                </div>
+                <div class="col col-33">
+                  <p class="f140" align="right">1.00</p>
+                  <p class="f140" align="right">配号数量</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="wdph_cont_tips clearfix">
+        <p>您没有账号信息</p>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'wdzq_cont'">
+      <div class="wdph_cont_title clearfix">
+        <div class="flt clearfix">
+          <span><ion-icon ios="ios-time-outline" md="ios-time-outline"></ion-icon></span>
+          <span>起始时间</span>
+        </div>
+        <div class="flt clearfix">
+          <span><ion-icon ios="ios-time-outline" md="ios-time-outline"></ion-icon></span>
+          <span>截止时间</span>
+        </div>
+      </div>
+      <div class="wdph_cont_cont clearfix">
+        <div class="flt clearfix">
+          <span>起始时间</span>
+          <span><ion-icon name="arrow-forward"></ion-icon></span>
+        </div>
+        <div class="frt clearfix">
+          <span>起始时间</span>
+          <span><ion-icon name="arrow-forward"></ion-icon></span>
+        </div>
+      </div>
+      <div class="wdph_cont_tips clearfix">
+        <p>您没有账号信息</p>
+      </div>
+
+    </ion-list>
+
+  </div>
+  <div class="footer-menu clearfix">
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-search" md="ios-search-outline"></ion-icon>
+      </p>
+      <p>我要打新</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon name="trending-up"></ion-icon>
+      </p>
+      <p>新股申购</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-reorder" md="md-reorder"></ion-icon>
+      </p>
+      <p>申购查询</p>
+    </div>
+    <div class="menuContent clearfix">
+      <p>
+        <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon>
+      </p>
+      <p>新股日历</p>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,57 @@
+page-ah-yywd {
+  ion-content {
+    background-color: #f7f7f7!important;
+  }
+  .item:nth-child(1) {
+    margin: 0;
+  }
+  .item {
+    background: #f7f7f7;
+  }
+  ion-item {
+    background-color: #f7f7f7;
+  }
+  .toolbar-background-ios {
+    background-color: #E32C35!important;
+  }
+  .toolbar-title-ios {
+    color: #fff!important;
+  }
+  .searchbar-ios {
+    background: #fff;
+    border: 1px solid #e0e0e0
+  }
+  .yywdAreaCont {
+    margin: 0 15px 0 15px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    height: 150px;
+    overflow-y: scroll;
+    padding: 10px 10px 0 10px;
+  }
+  .yywdAreaCont>ul>li {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  .title {
+    color: #000000;
+    font-size: 1.5rem;
+  }
+  .subTitleList ul li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #4093e6;
+    font-size: 1.3rem;
+  }
+  .subTitleList ul li:first-child {
+    margin-left: 0px;
+  }
+  .chinaMapCont {
+    width: 100%; // height: 500px;
+  }
+  .scroll-content {
+    overflow: hidden;
+  }
+}

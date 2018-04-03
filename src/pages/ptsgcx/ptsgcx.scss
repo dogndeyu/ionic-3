@@ -1,0 +1,102 @@
+.wdph_cont_title>div {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f7efef;
+}
+
+.wdph_cont_title>div span:nth-child(1) {
+  font-size: 2.5rem;
+  display: block;
+  float: left;
+  margin: 3px 20px;
+}
+
+.wdph_cont_title>div span:nth-child(2) {
+  line-height: 44px;
+  display: block;
+  float: left
+}
+
+.list-ios {
+  margin-bottom: 0
+}
+
+.wdph_cont_cont>div {
+  width: 50%;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.4rem;
+  color: #ab8888;
+}
+
+.wdph_cont_cont>div span:nth-child(1) {
+  float: left;
+  padding: 0 10px;
+  font-size: 1.25rem;
+}
+
+.wdph_cont_cont>div span:nth-child(2) {
+  float: right;
+  padding: 0 10px;
+}
+
+.wdph_cont_tips {
+  background-color: #f3f3f3;
+  height: 45px;
+}
+
+.wdph_cont_tips p {
+  padding: 5px;
+  background-color: #fff;
+  margin: 10px;
+  font-size: 1.25rem;
+  color: #e2704e
+}
+
+.footer-menu {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #444;
+  opacity: 0.85;
+  z-index: 66;
+}
+
+.menuContent {
+  width: 25%;
+  float: left;
+  height: 100%;
+}
+
+.menuContent P:nth-child(1) {
+  text-align: center;
+}
+
+.menuContent P:nth-child(1) ion-icon {
+  font-size: 3.2rem;
+  color: #9c9c9c;
+  line-height: 0.85;
+}
+
+.menuContent P:nth-child(2) {
+  color: #fff;
+  padding-top: -10px;
+  margin-top: -4px;
+  text-align: center
+}
+
+.ptsgLists ul li {
+  height: auto;
+  line-height: auto;
+}
+
+.ptsgLists_title {
+  height: 30px;
+  line-height: 30px;
+}
+
+.ptsgLists_cont .row {}

@@ -1,0 +1,50 @@
+page-activity-area {
+  // .scroll-content {
+  //   border-top: 1px solid #e0e0e0;
+  // }
+  .toolbar-background-ios {
+    background-color: #E32C35!important;
+  }
+  .toolbar-title-ios {
+    color: #fff!important;
+  }
+  .hdzqContent {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+  .hdzq_actTop {
+    width: 100%;
+    height: 35px;
+    background: rgba(240, 240, 240, 1);
+    border: none;
+    margin-bottom: 10px;
+  }
+  .hdzq_actImg {
+    margin: 0 10px 10px;
+  }
+  .hdzq_actImg img {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  .hdzq_actIcon {
+    padding-left: 10px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hdzq_actIcon img {
+    width: 20px;
+    height: 20px;
+  }
+  .hdzq_actname {
+    padding-left: 10px;
+    font-size: 1.4rem;
+    font-family: PingFangSC-Regular;
+    color: rgba(51, 51, 51, 1);
+    vertical-align: sub;
+  }
+}

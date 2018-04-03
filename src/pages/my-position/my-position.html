@@ -1,0 +1,166 @@
+<ion-header class="borderBotNone">
+  <ion-navbar>
+    <ion-title>
+      我的持仓
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="mysubscription">
+
+
+  <ion-slides pager>
+
+    <ion-slide>
+      <div class="mysubscriptionCont">
+        <p class="clearfix">浮动盈亏(人民币，单位元)</p>
+        <p class="clearfix">￥63299.30</p>
+        <div class="clearfix mysubscriptionCont_zjzh">
+          <span>资金账号：005217866530</span>
+          <span>存管银行：建设银行</span>
+        </div>
+        <div class="clearfix mysubscriptionCont_zqzzc">
+          <div class="flt clearfix mysubscriptionCont_zqzzc_le">
+            <div class="clearfix">
+              <span>证券总资产</span>
+              <span>301772345</span>
+            </div>
+            <div class="clearfix">
+              <span>可用资金</span>
+              <span>723779.88</span>
+            </div>
+          </div>
+          <div class="flt clearfix mysubscriptionCont_zqzzc_ri">
+            <div class="clearfix">
+              <span>证券市值</span>
+              <span>928668.90</span>
+            </div>
+            <div class="clearfix textLeft">
+              <span>可取资金</span>
+              <span>56773.88</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="mysubscriptionCont">
+        <p class="clearfix">浮动盈亏(人民币，单位元)</p>
+        <p class="clearfix">￥63299.30</p>
+        <div class="clearfix mysubscriptionCont_zjzh">
+          <span>资金账号：005217866530</span>
+          <span>存管银行：建设银行</span>
+        </div>
+        <div class="clearfix mysubscriptionCont_zqzzc">
+          <div class="flt clearfix mysubscriptionCont_zqzzc_le">
+            <div class="clearfix">
+              <span>证券总资产</span>
+              <span>301772345</span>
+            </div>
+            <div class="clearfix">
+              <span>可用资金</span>
+              <span>723779.88</span>
+            </div>
+          </div>
+          <div class="flt clearfix mysubscriptionCont_zqzzc_ri">
+            <div class="clearfix">
+              <span>证券市值</span>
+              <span>928668.90</span>
+            </div>
+            <div class="clearfix textLeft">
+              <span>可取资金</span>
+              <span>56773.88</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="mysubscriptionCont">
+        <p class="clearfix">浮动盈亏(人民币，单位元)</p>
+        <p class="clearfix">￥63299.30</p>
+        <div class="clearfix mysubscriptionCont_zjzh">
+          <span>资金账号：005217866530</span>
+          <span>存管银行：建设银行</span>
+        </div>
+        <div class="clearfix mysubscriptionCont_zqzzc">
+          <div class="flt clearfix mysubscriptionCont_zqzzc_le">
+            <div class="clearfix">
+              <span>证券总资产</span>
+              <span>301772345</span>
+            </div>
+            <div class="clearfix">
+              <span>可用资金</span>
+              <span>723779.88</span>
+            </div>
+          </div>
+          <div class="flt clearfix mysubscriptionCont_zqzzc_ri">
+            <div class="clearfix">
+              <span>证券市值</span>
+              <span>928668.90</span>
+            </div>
+            <div class="clearfix textLeft">
+              <span>可取资金</span>
+              <span>56773.88</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-slide>
+
+  </ion-slides>
+
+  <div class="mysubscriptionLi clearfix" *ngFor="let item of items">
+    <div class="mysubscriptionLi_top clearfix">
+      <ul class="clearfix">
+        <li class="clearfix">
+          <div class="clearfix">
+            {{item.name}}
+          </div>
+          <div>
+            <span>深</span>
+            <span>{{item.num}}</span>
+          </div>
+        </li>
+        <li class="clearfix">
+          <p>{{item.zxj}}</p>
+          <p>最新价</p>
+        </li>
+        <li class="clearfix">
+          <p>{{item.zfb}}%</p>
+          <p>涨幅榜</p>
+        </li>
+      </ul>
+    </div>
+    <div class="mysubscriptionLi_bot clearfix">
+      <ul class="clearfix">
+        <li class="clearfix">
+          <p>{{item.ky}}</p>
+          <p>可用</p>
+        </li>
+        <li class="clearfix">
+          <p>{{item.cccb}}</p>
+          <p>持仓成本</p>
+        </li>
+        <li class="clearfix">
+          <p>{{item.mgyk}}</p>
+          <p>每股盈亏</p>
+        </li>
+        <li class="clearfix">
+          <p>{{item.kq}}</p>
+          <p>可取</p>
+        </li>
+        <li class="clearfix">
+          <p>{{item.sz}}</p>
+          <p>市值</p>
+        </li>
+        <li class="clearfix">
+          <p>{{item.ykbfb}}%</p>
+          <p>盈亏百分比</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</ion-content>

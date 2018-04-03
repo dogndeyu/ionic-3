@@ -1,0 +1,423 @@
+page-login {
+  .loginDiv {
+    margin: 0!important; // background-color: #fff!important;
+    width: 84%;
+    left: 8%;
+    height: 75%;
+    top: 15%;
+    border-radius: 0.83em;
+  }
+  .loginHeader {
+    height: 60px;
+    line-height: 60px;
+    color: #004e97;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .loginTabContent {
+    border: 1px solid #e0e0e0; // height: 30px!important;
+    font-size: 1.6rem;
+    margin: 0px auto 0;
+    overflow: hidden;
+  }
+  .loginTabContent .loginTab {
+    height: 30px;
+    line-height: 30px;
+  }
+  .loginTabContent .loginTab:nth-child(1) {
+    color: #868686;
+    font-size: 1.4rem;
+    font-weight: normal;
+    transform: skew(50deg, 0deg);
+    margin-left: -34px;
+    z-index: 66;
+    border: none;
+    background-color: #fff;
+  }
+  .loginTabContent .loginTab:nth-child(2) {
+    background-color: #fff;
+    color: #868686;
+    transform: skew(50deg, 0deg);
+    z-index: 66;
+    float: right;
+    width: 50%;
+    margin-right: -34px;
+    font-weight: normal;
+    font-size: 1.3rem;
+    border: none;
+  }
+  .loginTabContent .loginTab:nth-child(1) div {
+    transform: skew(-50deg, 0deg)
+  }
+  .loginTabContent .loginTab:nth-child(2) div {
+    transform: skew(-50deg, 0deg)
+  }
+  .loginTab:first-child.segment-activated {
+    background-color: rgba(227, 44, 53, 1)!important;
+    color: #fff!important;
+  }
+  .loginTab:last-child.segment-activated {
+    background-color: #e32c35 !important;
+    color: #fff!important
+  }
+  .tabLoginBox {
+    padding: 10px 15px 10px 15px;
+    background-color: #fff;
+    border-bottom-left-radius: 0.83em;
+    border-bottom-right-radius: 0.83em;
+  }
+  .zhlxBg {
+    background-color: #dfad56;
+    margin-top: 27px;
+    min-height: 50px;
+  }
+  .zhlxCont {
+    padding: 0 25px;
+    position: relative;
+  }
+  .zhlxCont input {
+    height: 32px;
+    margin: 25px 0 0 40px;
+    width: 80%;
+    outline: none;
+    border-width: 0;
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
+    color: rgba(187, 187, 187, 1);
+    font-size: 1.4rem;
+    padding-top: 5px;
+    border-radius: 0;
+  }
+  .zhlxCont input::-webkit-input-placeholder {
+    color: rgba(187, 187, 187, 1);
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+  .zhlxCont ion-icon {
+    position: absolute;
+    top: 29px;
+    font-size: 3rem;
+    left: 30px;
+    color: rgba(170, 170, 170, 1);
+  }
+  .zhlxPasswordBg {
+    background-color: #ff7575;
+    margin-top: 15px;
+    min-height: 50px;
+  }
+  .zhlxPasswordCont {
+    padding: 0px 25px;
+    position: relative;
+  }
+  .zhlxPasswordCont input {
+    height: 32px;
+    margin: 12px 0 0 40px;
+    width: 80%;
+    outline: none;
+    border-width: 0;
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
+    color: rgba(187, 187, 187, 1);
+    font-size: 1.4rem;
+    padding-top: 5px;
+    border-radius: 0;
+  }
+  .zhlxPasswordCont input::-webkit-input-placeholder {
+    color: rgba(187, 187, 187, 1);
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+  .zhlxPasswordCont ion-icon {
+    position: absolute;
+    top: 12px;
+    font-size: 3rem;
+    left: 30px;
+    color: rgba(170, 170, 170, 1);
+  }
+  .ksdlToggle p {
+    padding-top: 13px
+  }
+  .ksdlToggle p span {
+    padding-top: 5px;
+    color: #9c9d9c;
+    font-size: 1.3rem;
+  }
+  .ksdlBtn {
+    height: 40px;
+    line-height: 40px;
+    width: 80%;
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+  }
+  .khTips {
+    background-color: #fff;
+    margin: 10px 0;
+    font-size: 1.4rem;
+    padding: 5px;
+    color: #969696;
+    line-height: 30px;
+  }
+  .colorTips {
+    font-size: 2rem;
+    color: #2484e8
+  }
+  .my-zxg {
+    margin-top: 85px;
+    text-align: center;
+  }
+  .my-zxg>div>div {
+    display: inline;
+    margin: 5px 5px;
+  }
+  .my-zxg>div div span {
+    display: inline-block;
+  }
+  .loginArea {
+    margin-top: 3px;
+  }
+  .loginArea ion-list {
+    background-color: #0080cc;
+    color: #fff;
+    padding-left: 30px;
+  }
+  .loginArea .list-ios[inset] {
+    margin: 0;
+    border-radius: 0;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.4rem;
+  }
+  .login_rightJt {
+    float: right;
+    margin: 22px 25px;
+  }
+  .slide-zoom {
+    height: 100%;
+  }
+  .khTipsCont {
+    margin-top: 30px;
+    color: #707070;
+    font-size: 1.3rem;
+  }
+  .khInformCont {
+    color: #707070;
+    font-size: 1.3rem;
+    margin-top: 5px;
+  }
+  .khReadTips {
+    color: rgba(111, 114, 118, 1);
+    font-size: 1.2rem;
+  }
+  .zfbk_tabContent {
+    margin-top: 10px;
+  }
+  .headPicture {
+    position: absolute;
+    width: 26%;
+    border-radius: 100%;
+    background-color: #fff;
+    padding: 4px;
+    left: 37%; // box-shadow: 3px 3px 10px #888888;
+  }
+  .headPicture img {
+    border-radius: 100%;
+  }
+  .BoxbackGround {
+    // background-color: rgba(41, 41, 41, 0.6);
+    width: 100%;
+    position: relative;
+  }
+  .content-ios {
+    background-color: transparent!important;
+  }
+  .tabLoginBox {}
+  .BoxbackGround div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-top-left-radius: 0.83em;
+    border-top-right-radius: 0.83em;
+  }
+  .scroll-content {
+    // overflow-y: hidden;
+  }
+  .loginDiv>div:nth-child(2) {
+    overflow-y: hidden;
+    z-index: 1;
+    position: absolute;
+  }
+  .contentTOP {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0
+  }
+  .contentBOTTOM {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0
+  }
+  .contentLEFT {
+    height: 100%;
+    width: 8%;
+    position: absolute;
+    left: 0;
+    top: 0
+  }
+  .contentRIGHT {
+    height: 100%;
+    width: 8%;
+    position: absolute;
+    right: 0;
+    top: 0
+  }
+  .tabLoginBox2 {
+    padding: 10px 15px 10px 15px;
+    background-color: #fff;
+    border-bottom-left-radius: 0.83em;
+    border-bottom-right-radius: 0.83em;
+  }
+  .zhlxTelephone {
+    padding: 0 25px;
+    position: relative;
+  }
+  .zhlxTelephone input {
+    height: 32px;
+    margin: 25px 0 0 43px;
+    width: 85%;
+    outline: none;
+    border-width: 0;
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
+    color: rgba(187, 187, 187, 1);
+    font-size: 1.4rem;
+    border-radius: 0;
+    padding-top: 5px;
+  }
+  .zhlxTelephone input::-webkit-input-placeholder {
+    color: rgba(187, 187, 187, 1);
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+  .zhlxTelephone ion-icon {
+    position: absolute;
+    top: 29px;
+    font-size: 3rem;
+    left: 33px;
+    color: rgba(170, 170, 170, 1);
+  }
+  .zhlxIdCode {
+    padding: 0 25px;
+    position: relative;
+  }
+  .zhlxIdCode input {
+    height: 32px;
+    margin: 20px 0 0 0;
+    width: 50%;
+    outline: none;
+    border-width: 0;
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
+    color: rgb(51, 23, 23);
+    font-size: 1.4rem;
+    padding-top: 5px;
+    margin-left: -30px;
+    border-radius: 0
+  }
+  .zhlxIdCode input::-webkit-input-placeholder {
+    color: rgba(187, 187, 187, 1);
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+  .zhlxIdCode ion-icon {
+    position: absolute;
+    top: 20px;
+    font-size: 3rem;
+    left: 30px;
+    color: rgba(170, 170, 170, 1);
+  }
+  .zhlxIdCode img {
+    width: 70px;
+    height: 28px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+  .zhlxEmail {
+    padding: 0 25px;
+    position: relative;
+  }
+  .zhlxEmail input:nth-child(2) {
+    height: 32px;
+    margin: 15px 0 0 0;
+    width: 50%;
+    outline: none;
+    border-width: 0;
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
+    color: rgba(187, 187, 187, 1);
+    font-size: 1.4rem;
+    padding-top: 5px;
+    margin-left: -30px;
+    border-radius: 0;
+  }
+  .zhlxEmail input::-webkit-input-placeholder {
+    color: rgba(187, 187, 187, 1);
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+  .zhlxEmail ion-icon {
+    position: absolute;
+    top: 17px;
+    font-size: 3rem;
+    left: 29px;
+    color: rgba(170, 170, 170, 1);
+  }
+  .zhlxEmail input:nth-child(3) {
+    width: 70px;
+    height: 28px;
+    font-size: 1.3rem;
+    border-radius: 0.33rem;
+    color: rgba(227, 44, 53, 1);
+    position: absolute;
+    border: 1px solid rgba(227, 44, 53, 1);
+    right: 13px;
+    top: 17px;
+    background-color: #fff;
+  }
+  .tabLoginBox2 button {
+    margin-top: 65px;
+  }
+  .checkbox-ios .checkbox-icon {
+    border-radius: 0;
+    width: 16px;
+    height: 16px;
+  }
+  ion-slide {
+    border-bottom-right-radius: 0.83em;
+    border-bottom-left-radius: 0.83em;
+  }
+  .khReadTips ion-checkbox {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-left: 12%;
+  }
+  .khReadTips span {
+    display: block;
+    float: left;
+  }
+  .checkbox-ios .checkbox-checked .checkbox-inner {
+    top: 2px;
+    left: 5px;
+  }
+  .gyfwxyCont {
+    color: rgba(56, 123, 232, 1)
+  }
+}
+
+ion-modal {
+  background-color: rgba(41, 41, 41, 0.6);
+}

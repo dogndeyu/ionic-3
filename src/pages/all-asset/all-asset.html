@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar color="navbarBgColr">
+    <ion-title>
+      总资产
+      <span style="position:relative">
+        <ion-icon ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        <ion-icon style="position:absolute; top:7px; left:0" ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+      </span>
+
+    </ion-title>
+    <ion-buttons end class="iconSearchBtn">
+      <ion-icon class="iconEtc" ios="ios-more" md="md-more"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="clearfix myPositionCont">
+    <div class="allPrice_cont clearfix">
+      <div class="allPriceText_cont clearfix">
+        <div class="clearfix flt">总盈亏 (元)</div>
+      </div>
+      <p style="color:#fff;">0.00</p>
+    </div>
+    <div class="allPriceNumber_cont">
+      <p class="clearfix">
+        <span class="flt">可用资金(元)</span>
+        <span class="frt">0.00</span>
+      </p>
+      <p class="clearfix">
+        <span class="flt">可取资金(元)</span>
+        <span class="frt">0.00</span>
+      </p>
+      <p class="clearfix">
+        <span class="flt">股票市值(元)</span>
+        <span class="frt">0.00</span>
+      </p>
+    </div>
+  </div>
+  <div class="clearfix myPositionSection" style="background-color:#fff;">
+    <div class="myPositionSection_inform">
+      <p>您当前没有持仓信息</p>
+    </div>
+  </div>
+
+  <div class="myPositionBottom clearfix">
+    <ul class="clearfix">
+      <li class="clearfix">
+        <div>
+          <ion-icon ios="ios-trending-up" md="md-trending-up"></ion-icon>
+        </div>
+        <p>持仓</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <ion-icon name="ios-basket-outline"></ion-icon>
+        </div>
+        <p>买</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <ion-icon name="ios-cart-outline"></ion-icon>
+        </div>
+        <p>卖</p>
+      </li>
+      <li class="clearfix" (click)="goEntrustSearch()">
+        <div>
+          <ion-icon name="ios-hand-outline"></ion-icon>
+        </div>
+        <p>委托</p>
+      </li>
+      <li class="clearfix" (click)="showMenuList()">
+        <div>
+          <ion-icon name="ios-apps-outline"></ion-icon>
+        </div>
+        <p>查询</p>
+      </li>
+    </ul>
+  </div>
+</ion-content>

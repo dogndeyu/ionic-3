@@ -1,0 +1,270 @@
+<ion-content>
+  <!-- <div class="loginBox clearfix">
+    <div class="loginContent clearfix">
+      <p class="loginTips clearfix">
+        <span>交易账号未登录</span>
+      </p>
+      <div class="login_btn clearfix">
+        <span *ngIf="itsShow" (click)="goLogin()">请登录交易账户</span>
+        <div class="clearfix" *ngIf="itsDetail">
+          <div class="asset_cont clearfix">
+            <div class="asset_detail clearfix">
+              <p>人民币总资产 (元)</p>
+              <p>0.00</p>
+            </div>
+            <div class="asset_analyse clearfix" (click)="goZhfxPage()">
+              账户分析
+            </div>
+          </div>
+          <ul class="clearfix mountTrade">
+            <li (click)="goUserInformation()">
+              <p>市值</p>
+              <p>0.00</p>
+            </li>
+            <li (click)="goUserForm()">
+              <p>市值</p>
+              <p>0.00</p>
+            </li>
+            <li>
+              <p>市值</p>
+              <p>0.00</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="btpanelBox clearfix">
+    <ul>
+      <li (click)="goMyPage()">
+        <div class="roundCont">买</div>
+        <p>买入</p>
+      </li>
+      <li (click)="goMyRemind()">
+        <div class="roundCont">卖</div>
+        <p>卖出</p>
+      </li>
+      <li (click)="goMyXgrl()">
+        <div class="roundCont">撤</div>
+        <p>撤单</p>
+      </li>
+      <li (click)='goDrxgPage()'>
+        <div class="roundCont">持</div>
+        <p>持仓</p>
+      </li>
+      <li (click)='goPtzhdxPage()'>
+        <div class="roundCont">
+          <ion-icon ios="ios-calendar" md="md-calendar" style="margin-top:12px;"></ion-icon>
+        </div>
+        <p>当日交易</p>
+      </li>
+      <li (click)="goPtsgcxPage()">
+        <div class="roundCont">
+          <ion-icon ios="ios-card" md="md-card" style="font-size:3rem;margin-top:10px;"></ion-icon>
+        </div>
+        <p>银证转账</p>
+      </li>
+      <li (click)="goTabListPage()">
+        <div class="roundCont">新</div>
+        <p>新股申购</p>
+      </li>
+      <li (click)="goPtzhBuyPage()">
+        <div class="roundCont">港</div>
+        <p>沪港通</p>
+      </li>
+    </ul>
+  </div>
+  <div class="listContent clearfix">
+    <ion-list (click)="goZjzzPage()">
+      <button ion-item>
+        <span>
+        </span>
+        <span>资金管理</span>
+        <span>交易资金转入、转出、查询</span>
+      </button>
+    </ion-list>
+    <ion-list (click)="goMyposition()">
+      <button ion-item>
+        <span>
+        </span>
+        <span>资金管理</span>
+        <span>交易资金转入、转出、查询</span>
+      </button>
+    </ion-list>
+  </div>
+  <div class="my-zxg">
+    <p class="f100" align="center">版权所有 2016(沪ICP证B2-20040408-5)国泰君安证券股份有限公司(3.0.0.20160918)</p>
+    <div class="">
+      <div class="f110 ">
+        <span class="">
+          <ion-icon class="f170" ios="ios-call" md="md-call"></ion-icon>
+        </span>
+        <span class="">95521</span>
+      </div>
+      <div class="f110 ">
+        <span class="">
+          <ion-icon class="f170" ios="ios-mail" md="md-mail"></ion-icon>
+        </span>
+        <span class="">95521@gtjas.com</span>
+      </div>
+      <div class="f110 ">
+        <span class="">
+          <ion-icon class="f170" ios="ios-filing" md="md-filing"></ion-icon>
+        </span>
+        <span class=""> 021-38670666</span>
+      </div>
+
+
+    </div>
+  </div> -->
+  <header class="MyPage_header">
+    <div class="MyPage_header_cont clearfix">
+      <div class="flt clearfix MyPage_header_img" (click)="showModal()">
+        <img src="assets/img/1.png" alt="">
+      </div>
+      <div class="flt clearfix MyPage_header_inform">
+        <div class="clearfix">
+          <span>Adam</span>
+
+        </div>
+        <div class="clearfix">
+          <span>资金账号:</span>
+          <span>052****4444</span>
+        </div>
+        <div class="clearfix">
+          <span>手机号码:</span>
+          <span>187****3593</span>
+        </div>
+      </div>
+      <div class="frt clearfix MyPage_header_score">
+        <div>
+          签到领积分
+          <div class="sanjiaoxing"></div>
+        </div>
+        <div>
+          8000分 | 连续一天
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mypageBanner clearfix">
+    <img src="assets/img/add_one.png" alt="">
+  </div>
+  <div class="clearfix MyPage_wdyw">
+    <p class="clearfix">我的业务</p>
+    <ul class="clearfix">
+      <li class="clearfix" (click)="goZc360Page()">
+        <div>
+          <i class="icon iconfont icon-zichan"></i>
+        </div>
+        <p>资产360</p>
+      </li>
+      <li class="clearfix" (click)="goMyposition()">
+        <div>
+          <i class="icon iconfont icon-wodechicang1"></i>
+        </div>
+        <p>我的持仓</p>
+      </li>
+      <li class="clearfix" (click)="goMyRemind()">
+        <div>
+          <i class="icon iconfont icon-notifications-copy"></i>
+        </div>
+        <p>消息提醒</p>
+      </li>
+      <li class="clearfix" (click)="goScoreShop()">
+        <div>
+          <i class="icon iconfont icon-shangchengxian"></i>
+        </div>
+        <p>积分商城</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <i class="icon iconfont icon-xinwen"></i>
+        </div>
+        <p>我的资讯</p>
+      </li>
+      <li class="clearfix" (click)="goMicroSchoolPage()">
+        <div>
+          <i class="icon iconfont icon-weixuetang"></i>
+        </div>
+        <p>微学堂</p>
+      </li>
+      <li class="clearfix" (click)="goKhjlPage()">
+        <div>
+          <i class="icon iconfont icon-wodekehujingli1"></i>
+        </div>
+        <p>我的客户经理</p>
+      </li>
+
+      <li class="clearfix" (click)="goAppDownloadPage()">
+        <div>
+          <i class="icon iconfont icon-appxiazai"></i>
+        </div>
+        <p>app下载</p>
+      </li>
+
+      <li class="clearfix" (click)="goYywdPage()">
+        <div>
+          <i class="icon iconfont icon-yingyewangdian"></i>
+        </div>
+        <p>营业网点</p>
+      </li>
+    </ul>
+  </div>
+  <div class="clearfix MyPage_wdyw">
+    <p class="clearfix">转向服务</p>
+    <ul class="clearfix">
+      <li class="clearfix">
+        <div>
+          <i class="icon iconfont icon-licaishangcheng"></i>
+        </div>
+        <p>理财商城</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <i class="icon iconfont icon-men"></i>
+        </div>
+        <p>投顾平台</p>
+      </li>
+      <li class="clearfix" (click)="goActivityAreaPage()">
+        <div>
+          <i class="icon iconfont icon-huodongzhuanqu"></i>
+        </div>
+        <p>活动专区</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <i class="icon iconfont icon-yewubanli"></i>
+        </div>
+        <p>业务办理</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <i class="icon iconfont icon-wodekehujingli"></i>
+        </div>
+        <p>电子回访</p>
+      </li>
+      <li class="clearfix">
+        <div>
+          <i class="icon iconfont icon-touzizhejiaoyu"></i>
+        </div>
+        <p>投资者教育</p>
+      </li>
+
+
+    </ul>
+  </div>
+  <div class="MyPage_footer clearfix">
+    <div class="MyPage_footer_call">
+      全国客户服务热线
+      <ion-icon name="call"></ion-icon>
+      <a style="color:#898989;text-decoration:none;" href="tel">95578</a> /
+      <a style="color:#898989;text-decoration:none;" href="tel">4008888777</a>
+    </div>
+  </div>
+  <!-- <my-slide></my-slide>
+  <login-in></login-in> -->
+  <!-- <login-in></login-in> -->
+</ion-content>
